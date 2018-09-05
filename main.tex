@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{textcomp}
 
 %% new commands
 \newcommand{\species}[1]{(\xmakefirstuc{\emph{#1}})}
@@ -36,7 +37,7 @@ Nice abstract here
 \end{abstract}
 
 \newpage
-\section{Introduction}
+\section*{Introduction}
 
 Mating and reproduction affect many facets of an individual phenotype,
 changing its appearance and shape or shaping its life history and
@@ -163,17 +164,17 @@ et al., 2015 in bears), this is, to our knowledge, the first time that
 territorial and rutting behaviours has been inferred from remote GPS
 monitoring (but see Silva et al., 2017 on lekking in little bustards).
 
-\section{Material and Methods}
-\subsection{Study areas}
+\section*{Material and Methods}
+\subsection*{Study areas}
 
 To assess the timing of territoriality and rutting behaviour in roe
 deer, we used the extensive GPS monitoring studies from two sites
-which feature in the EURODEER database (Cagnacci et al., 2011). We
+which feature in the EURODEER database \citep{cagnacci_partial_2011}. We
 selected these study sites (Fig. 1) because they had large sample
 sizes for animals of both sexes and all three age-classes (see below).
 
-The study site in the Comminges region of south-west France (N 43°13',
-E 0°52', 110 km², hereafter AUR) is a hilly (max. 380 m a.s.l.) mixed
+The study site in the Comminges region of south-west France (N 43° 13',
+E 0° 52', 110 km$^2$, hereafter AUR) is a hilly (max. 380 m a.s.l.) mixed
 landscape of open fields and small woodland patches, with two large
 forests (672 and 463 ha) and numerous small forest patches (covering
 19.3\% of the site). The remainder of the study site consists
@@ -181,23 +182,23 @@ essentially of meadows for livestock grazing (37.2\%), crops (31.6\%),
 and hedgerows (3.6\%). The human population is present throughout the
 site, in small villages and farms that are distributed along the
 extensive road network. The climate is oceanic, with an average annual
-temperature of 11-12°C and 800 mm precipitation. The roe deer is
+temperature of 11-12° C and 800 mm precipitation. The roe deer is
 hunted by stalking during summer (June-August) and drive hunts with
 dogs during autumn-winter (September to February).
 
-The study site in Germany and the Czech republic (N 49°01', E 13°40',
+The study site in Germany and the Czech republic (N 49° 01', E 13° 40',
 3070 km², hereafter BAV) is a central European sub-mountainous forest,
 including two adjacent National Parks, the Bavarian Forest National
-Park (240 km²) and the Šumava National Park (640 km²) in Germany and
-Czech republic respectively (D:49°N). There is marked variation in
+Park (240 km$^2$) and the Šumava National Park (640 km$^2$) in Germany and
+Czech republic respectively (D:49° N). There is marked variation in
 elevation between 600 and 1450 m a.s.l. and the site consists
-essentially of forests of Norway spruce (Picea abies L.). The climate
+essentially of forests of Norway spruce \species{picea abies L.}. The climate
 is continental, with an average annual temperature between 3°C and
-6.5°C depending on elevation, and an average annual precipitation of
+6.5° C depending on elevation, and an average annual precipitation of
 between 830 and 2230 mm. The roe deer is hunted...\todo{to be
   completed by Marco}
 
-\subsection{Data collection}
+\subsection*{Data collection}
 For the AUR study site, from 2002-2013, roe deer were caught during
 winter (from 16th November to 27th March) using drives of 30-100
 beaters and 4 km of long-nets at one of 10 capture sites. For the BAV
@@ -212,7 +213,7 @@ be quite reliably identified from the degree of tooth wear (Hewison et
 al., 1999). Then, deer were equipped with GPS collars (mainly Lotek
 3300 for AUR and Vectronic Aerospace for BAV) and released on site.
 
-\subsection{Data processing}
+\subsection*{Data processing}
 We first selected and standardised location data among the two study
 sites. We removed all locations recorded during the first week of
 monitoring after an animal’s capture and release because of potential
@@ -267,8 +268,8 @@ centred on each theoretical GPS location (i.e. at 0, 6, 12 and
 18h). For example, for a location obtained at 6h, we averaged activity
 data measured from 3h to 9h separately for both the X and Y axes.
 
-\section{Statistical analyses}
-\subsection{At the population level}
+\section*{Statistical analyses}
+\subsection*{At the population level}
 To detect territorial and/or rutting behaviour, we compared the
 movement and activity metrics of male and female juveniles, yearlings
 and adults. Indeed, a priori, we expected to observe signals of
@@ -310,7 +311,7 @@ structure of residuals, we used the Box-Cox power transformation of
 the four variables using the boxcox function in the “MASS” library
 implemented in R software, version 3.3.1 (R Core Team, 2016). We used
 the second order Akaike’s information criterion corrected for small
-sample size (AICc; Burnham and Anderson, 1998) and Akaike weights (w)
+sample size (AICc; Burnham and Anderson, 1998) and Akaike weights ($w$)
 to select the model with the most support among the set of five
 candidate models constructed a priori. All generalized additive mixed
 models were fitted using the “gamm” function in the “mgcv” library
@@ -322,7 +323,7 @@ individuals that were not classified as sedentary following the
 approach described in Cagnacci et al., (2011) and then repeated the
 analyses.
 
-\subsection{At the individual level}
+\subsection*{At the individual level}
 To see whether it is possible to discriminate territorial and
 non-territorial animals, we used an unsupervised clustering method
 based on the three temporal metrics speed, meanX and meanY. We did not
@@ -368,8 +369,8 @@ size.
 We used the “dredge” function in the MuMIn library to generate all
 sets of models (Barton, 2016).
 
-\section{Results}
-\subsection{At the population level}
+\section*{Results}
+\subsection*{At the population level}
 
 Our overall results were robust with respect to sedentary
 status. Indeed, whether we restricted the analysis to sedentary
@@ -400,7 +401,7 @@ the 20th of April and 1st of May for AUR and BAV, respectively) and
 another peak in summer (around the 1st of August and 25th of July for
 AUR and BAV, respectively).
 
-\subsection{At the individual level}
+\subsection*{At the individual level}
 From the hierarchical clustering performed separately for each study
 site on movement speed and head movements (meanX+meanY), for each
 study site we retained two clusters of individuals that showed
@@ -416,13 +417,12 @@ the sex-, study site- and age- dependence of this behaviour, the best
 model describing the probability of having two activity peaks
 contained only the two-way interaction between age and sex (AICc
 weight = 0.25, Table 2, Fig. 4). The probability of having two
-activity peaks was much lower for adult females (0.016±0.016) than for
-adult males (0.852±0.048).
+activity peaks was much lower for adult females (0.016$\pm$0.016) than for
+adult males (0.852$\pm$0.048).
 
-\section{Discussion}
+\section*{Discussion}
 
 \bibliography{nico}
-
 
 \newpage
 \begin{table}[htbp]
@@ -437,8 +437,8 @@ adult males (0.852±0.048).
     individual roe deer with at least 75\% of scheduled locations in
     the two study sites (AUR in France and BAV in Germany), from 2002
     to 2013 in AUR and from 2004 and 2015 in BAV. The most supported
-    model, based on the differences in the values for ∆AICc and Akaike
-    weights (w), is reported in bold. All models including a two-way
+    model, based on the differences in the values for $\Delta$AICc and Akaike
+    weights ($w$), is reported in bold. All models including a two-way
     interaction also include main effects. AICc is the value of the
     corrected Akaike’s information criterion and df is the number of
     degree of freedom for each model.}
@@ -446,7 +446,7 @@ adult males (0.852±0.048).
     \begin{tabular}{rrrrrr}
       \\
       \hline  
-      Proxy & Models & df    & AICc  & ∆AICc & w \\
+      Proxy & Models & df    & AICc  & $\Delta$AICc & $w$ \\
       \hline
       RT250 & S(time) & 266.6 & -703224.5 & 31710.8 & <0.001 \\
             & S(time by sex) & 285   & -720677.4 & 14257.9 & <0.001 \\
@@ -485,18 +485,18 @@ adult males (0.852±0.048).
     roe deer with at least 75\% of scheduled locations in the two
     study sites (AUR in France and BAV in Germany), from 2002 to 2013
     in AUR and from 2004 and 2015 in BAV. We only report the
-    top-ranked model with a ∆AICc that differed by < 5 from the most
+    top-ranked model with a $\Delta$AICc that differed by < 5 from the most
     supported model in the table (in bold) and the null model. All
     models including a two-way interaction also include main
     effects. AICc is the value of the corrected Akaike’s information
     criterion and df is the number of degree of freedom for each
     model. The ranking of the models is based on the differences in
-    the values for ∆AICc and Akaike weights (w).}
+    the values for $\Delta$AICc and Akaike weights ($w$).}
   
     \begin{tabular}{rrrrr}
     \\
     \hline
-        Models & df    & AICc  & ∆AICc & w \\
+        Models & df    & AICc  & $\Delta$AICc & $w$ \\
     \hline
     \textbf{sex x age} & \textbf{6}     & \textbf{172.1} & \textbf{0}     & \textbf{0.253} \\
     sex x age  + site x sex & 8     & 172.4 & 0.31  & 0.217 \\
@@ -518,22 +518,17 @@ adult males (0.852±0.048).
 
 \begin{figure} [!h]
 \centering
-\caption{Temporal variations in residence time within a radius of 250 m (RT250), movement speed (speed), mean head movements on the X axis (meanX) and mean head movements on the Y axis (meanY) for adult male and female roe deer in the two study sites (AUR in France and BAV in Germany), from 2002 to 2013 in AUR and from 2004 and 2015 in BAV. The time series starts on the 22nd of December. The lines (and dotted lines) represent the separate GAMM models for each variable (with the confidence intervals) including a smoothed effect of time (Julian date) based on cyclic P-spline, which differed among study sites, sexes and age classes. Based on the literature, the light gray represents the assumed territorial period, from the 1st of April to the 1st of September, and the dark gray represents the birth period for females, from the 1st of May to the 1st of June. Finally, for males the dark gray lines represent the temporal window for the observed peaks in these metrics in spring (20th of April and 1st of May for F:43°N and D:49°N, respectively) and summer (1st of August and 25th of July for F:43°N and D:49°N, respectively).}
+\caption{Temporal variations in residence time within a radius of 250 m (RT250), movement speed (speed), mean head movements on the X axis (meanX) and mean head movements on the Y axis (meanY) for adult male and female roe deer in the two study sites (AUR in France and BAV in Germany), from 2002 to 2013 in AUR and from 2004 and 2015 in BAV. The time series starts on the 22nd of December. The lines (and dotted lines) represent the separate GAMM models for each variable (with the confidence intervals) including a smoothed effect of time (Julian date) based on cyclic P-spline, which differed among study sites, sexes and age classes. Based on the literature, the light gray represents the assumed territorial period, from the 1st of April to the 1st of September, and the dark gray represents the birth period for females, from the 1st of May to the 1st of June. Finally, for males the dark gray lines represent the temporal window for the observed peaks in these metrics in spring (20th of April and 1st of May for F:43° N and D:49° N, respectively) and summer (1st of August and 25th of July for F:43° N and D:49° N, respectively).}
 \end{figure}
 
 \begin{figure} [!h]
 \centering
-\caption{Temporal variations in mean head movements on the Y axis for male and female roe deer among age classes in the two study sites (AUR in France and BAV in Germany), from 2002 to 2013 in AUR and from 2004 and 2015 in BAV. The time series starts on the 22nd of December. The lines (and dotted lines) represent the GAMM models (with the confidence intervals) including a smoothed effect of time (Julian date) based on a cyclic P-spline, which differed among study sites, sexes and age classes. Based on the literature, the light gray represents the assumed territorial period, from the 1st of April to the 1st of September, and the dark gray represents the birth period for females, from the 1st of May to the 1st of June. Finally, for males the dark gray lines represent the temporal window for the observed peaks in these metrics in spring (20th of April and 1st of May for F:43°N and D:49°N, respectively) and summer (1st of August and 25th of July for F:43°N and D:49°N, respectively).}
+\caption{Temporal variations in mean head movements on the Y axis for male and female roe deer among age classes in the two study sites (AUR in France and BAV in Germany), from 2002 to 2013 in AUR and from 2004 and 2015 in BAV. The time series starts on the 22nd of December. The lines (and dotted lines) represent the GAMM models (with the confidence intervals) including a smoothed effect of time (Julian date) based on a cyclic P-spline, which differed among study sites, sexes and age classes. Based on the literature, the light gray represents the assumed territorial period, from the 1st of April to the 1st of September, and the dark gray represents the birth period for females, from the 1st of May to the 1st of June. Finally, for males the dark gray lines represent the temporal window for the observed peaks in these metrics in spring (20th of April and 1st of May for F:43° N and D:49° N, respectively) and summer (1st of August and 25th of July for F:43° N and D:49° N, respectively).}
 \end{figure}
 
 \begin{figure} [!h]
 \centering
 \caption{The probability of having two temporal peaks of activity in relation to the sex and the age class, for roe deer monitored in two study sites (AUR in France and BAV in Germany), from 2002 to 2013 in AUR and from 2004 and 2015 in BAV. The dots (and segment lines) represent the GLM models (with the confidence intervals).}
 \end{figure}
-
-
-
-
-
 
 \end{document}
