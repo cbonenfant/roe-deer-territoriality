@@ -1,7 +1,53 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
+
+\bibitem[{Asher et~al.(2014)Asher, Wall, O’Neill, Littlejohn, Bryant \&
+  Cox}]{asher_use_2014}
+Asher, G., Wall, A., O’Neill, K., Littlejohn, R., Bryant, A. \& Cox, N. 2014:
+  The use of {GPS} data to identify calving behaviour of farmed red deer hinds:
+  {Proof} of concept for intensively managed hinds.  -- Applied Animal
+  Behaviour Science 154: 93--103,
+  \urlprefix\url{http://linkinghub.elsevier.com/retrieve/pii/S0168159114000586}.
+
+\bibitem[{Barraquand \& Benhamou(2008)}]{barraquand_animal_2008}
+Barraquand, F. \& Benhamou, S. 2008: Animal {Movements} in {Heterogeneous}
+  {Landscapes}: {Identifying} {Profitable} {Places} and {Homogeneous}
+  {Movement} {Bouts}.  -- Ecology 89(12): 3336--3348.
+
+\bibitem[{Barton(2016)}]{barton_mumin:_2016}
+Barton, K. 2016: {MuMIn}: {Multi}-{Model} {Inference}. {R} package version
+  1.15.6. \urlprefix\url{https://CRAN.R-project.org/package=MuMIn}.
+
+\bibitem[{Borger et~al.(2006)Borger, Franconi, Ferretti, Meschi, De~Michele,
+  Gantz \& Coulson}]{borger_integrated_2006}
+Borger, L., Franconi, N., Ferretti, F., Meschi, F., De~Michele, G., Gantz, A.
+  \& Coulson, T. 2006: An integrated approach to identify spatiotemporal and
+  individual-level determinants of animal home range size.  -- The American
+  Naturalist 168(4): 471--485.
+
+\bibitem[{Burnham \& Anderson(1998)}]{burnham_model_1998}
+Burnham, K. \& Anderson, D. 1998: Model selection and inference {A} practical
+  information-{Theoric} approach. Technical report, Springer-Verlag New York
+  Inc., New York.
+
+\bibitem[{Cagnacci et~al.(2010)Cagnacci, Boitani, Powell \&
+  Boyce}]{cagnacci_animal_2010}
+Cagnacci, F., Boitani, L., Powell, R.A. \& Boyce, M.S. 2010: Animal ecology
+  meets {GPS}-based radiotelemetry: a perfect storm of opportunities and
+  challenges.  -- Philosophical Transactions of the Royal Society B: Biological
+  Sciences 365(1550): 2157--2162,
+  \urlprefix\url{http://rstb.royalsocietypublishing.org/content/365/1550/2157.abstract}.
+
+\bibitem[{Cagnacci et~al.(2011)Cagnacci, Focardi, Heurich, Stache, Hewison,
+  Morellet, Kjellander, Linnell, Mysterud, Neteler, Delucchi, Ossi \&
+  Urbano}]{cagnacci_partial_2011}
+Cagnacci, F., Focardi, S., Heurich, M., Stache, A., Hewison, A.M., Morellet,
+  N., Kjellander, P., Linnell, J., Mysterud, A., Neteler, M., Delucchi, L.,
+  Ossi, F. \& Urbano, F. 2011: Partial migration in roe deer: migratory and
+  resident tactics are end points of a behavioural gradient determined by
+  ecological factors.  -- Oikos 120: 1790--1802.
 
 \bibitem[{Corlatti et~al.(2012)Corlatti, Béthaz, von Hardenberg, Bassano,
   Palme \& Lovari}]{corlatti_hormones_2012}
@@ -10,6 +56,174 @@ Corlatti, L., Béthaz, S., von Hardenberg, A., Bassano, B., Palme, R. \&
   chamois: identifying the mechanisms of life history trade-offs.  -- Animal
   Behaviour 84(4): 1061--1070,
   \urlprefix\url{http://linkinghub.elsevier.com/retrieve/pii/S0003347212003545}.
+
+\bibitem[{Cristescu et~al.(2015)Cristescu, Stenhouse \&
+  Boyce}]{cristescu_predicting_2015}
+Cristescu, B., Stenhouse, G.B. \& Boyce, M.S. 2015: Predicting multiple
+  behaviors from {GPS} radiocollar cluster data.  -- Behavioral Ecology 26(2):
+  452--464,
+  \urlprefix\url{https://academic.oup.com/beheco/article-lookup/doi/10.1093/beheco/aru214}.
+
+\bibitem[{Debeffe et~al.(2014)Debeffe, Focardi, Bonenfant, Hewison, Morellet,
+  Vanpé, Heurich, Kjellander, Linnell, Mysterud, Pellerin, Sustr, Urbano \&
+  Cagnacci}]{debeffe_one_2014}
+Debeffe, L., Focardi, S., Bonenfant, C., Hewison, A., Morellet, N., Vanpé, C.,
+  Heurich, M., Kjellander, P., Linnell, J., Mysterud, A., Pellerin, M., Sustr,
+  P., Urbano, F. \& Cagnacci, F. 2014: A one night stand? {Reproductive}
+  excursions of female roe deer as a breeding dispersal tactic.  -- Oecologia
+  176(2 DO - 10.1007/s00442-014-3021-8): 431--443 LA -- English,
+  \urlprefix\url{http://dx.doi.org/10.1007/s00442-014-3021-8}.
+
+\bibitem[{DeMars et~al.(2013)DeMars, Auger-Méthé, Schlägel \&
+  Boutin}]{demars_inferring_2013}
+DeMars, C.A., Auger-Méthé, M., Schlägel, U.E. \& Boutin, S. 2013: Inferring
+  parturition and neonate survival from movement patterns of female ungulates:
+  a case study using woodland caribou.  -- Ecology and Evolution 3(12):
+  4149--4160, \urlprefix\url{http://doi.wiley.com/10.1002/ece3.785}.
+
+\bibitem[{Evans et~al.(2013)Evans, Kadin, Olsson \&
+  Åkesson}]{evans_foraging_2013}
+Evans, T., Kadin, M., Olsson, O. \& Åkesson, S. 2013: Foraging behaviour of
+  common murres in the {Baltic} {Sea}, recorded by simultaneous attachment of
+  {GPS} and time-depth recorder devices.  -- Marine Ecology Progress Series
+  475: 277--289,
+  \urlprefix\url{http://www.int-res.com/abstracts/meps/v475/p277-289/}.
+
+\bibitem[{Gosling(1982)}]{gosling_reassessment_1982}
+Gosling, L.M. 1982: A {Reassessment} of the {Function} of {Scent} {Marking} in
+  {Territories}.  -- Zeitschrift für Tierpsychologie 60(2): 89--118,
+  \urlprefix\url{http://doi.wiley.com/10.1111/j.1439-0310.1982.tb00492.x}.
+
+\bibitem[{Hewison et~al.(1998)Hewison, Vincent \& Reby}]{andersen_social_1998}
+Hewison, A.J.M., Vincent, J. \& Reby, D. 1998: Social organisation of
+  {European} roe deer.  -- In: R.~Andersen, P.~Duncan \& J.~Linnell (Eds.); The
+  {European} roe deer: the biology of success, Scandinavian University Press.,
+  Oslo, pp. 189--219.
+
+\bibitem[{Hewison et~al.(1999)Hewison, Vincent, Angibault, Delorme, Van~Laere
+  \& Gaillard}]{hewison_tests_1999}
+Hewison, A.J.M., Vincent, J.P., Angibault, J.M., Delorme, D., Van~Laere, G. \&
+  Gaillard, J.M. 1999: Tests of estimation of age from tooth wear on roe deer
+  of known age: variation within and among populations.  -- Canadian Journal of
+  Zoology 77: 58--67.
+
+\bibitem[{Kays et~al.(2015)Kays, Crofoot, Jetz \&
+  Wikelski}]{kays_terrestrial_2015}
+Kays, R., Crofoot, M.C., Jetz, W. \& Wikelski, M. 2015: Terrestrial animal
+  tracking as an eye on life and planet.  -- Science 348(6240): aaa2478,
+  wOS:000356011500044.
+
+\bibitem[{Kie et~al.(2010)Kie, Matthiopoulos, Fieberg, Powell, Cagnacci,
+  Mitchell, Gaillard \& Moorcroft}]{kie_home-range_2010}
+Kie, J.G., Matthiopoulos, J., Fieberg, J., Powell, R.A., Cagnacci, F.,
+  Mitchell, M.S., Gaillard, J.M. \& Moorcroft, P.R. 2010: The home-range
+  concept: are traditional estimators still relevant with modern telemetry
+  technology?  -- Philosophical Transactions of the Royal Society B: Biological
+  Sciences 365(1550): 2221--2231,
+  \urlprefix\url{http://rstb.royalsocietypublishing.org/content/365/1550/2221.abstract}.
+
+\bibitem[{Krofel et~al.(2013)Krofel, Skrbinšek \& Kos}]{krofel_use_2013}
+Krofel, M., Skrbinšek, T. \& Kos, I. 2013: Use of {GPS} location clusters
+  analysis to study predation, feeding, and maternal behavior of the {Eurasian}
+  lynx.  -- Ecological Research 28(1): 103--116,
+  \urlprefix\url{http://link.springer.com/10.1007/s11284-012-1005-x}.
+
+\bibitem[{Liberg et~al.(1998)Liberg, Johansson, Andersen \&
+  Linnell}]{andersen_mating_1998}
+Liberg, O., Johansson, A., Andersen, R. \& Linnell, J. 1998: Mating system,
+  mating tactics and the function of male territoriality in roe deer.  -- In:
+  R.~Andersen, P.~Duncan \& J.~Linnell (Eds.); The {European} roe deer: the
+  biology of success, Scandinavian University Press, Oslo, pp. 189--219.
+
+\bibitem[{Maher \& Lott(1995)}]{maher_definitions_1995}
+Maher, C.R. \& Lott, D.F. 1995: Definitions of territoriality used in the study
+  of variation in vertebrate spacing systems.  -- Animal Behaviour 49(6):
+  1581--1597,
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/0003347295900802}.
+
+\bibitem[{Maublanc et~al.(2012)Maublanc, Bideau, Willemet, Bardonnet, Gonzalez,
+  Desneux, Cebe \& Gerard}]{maublanc_ranging_2012}
+Maublanc, M.L., Bideau, E., Willemet, R., Bardonnet, C., Gonzalez, G., Desneux,
+  L., Cebe, N. \& Gerard, J.F. 2012: Ranging behaviour of roe deer in an
+  experimental high-density population: {Are} females territorial?  -- Comptes
+  Rendus Biologies 335(12): 735--743.
+
+\bibitem[{Morellet et~al.(2013)Morellet, Bonenfant, Börger, Ossi, Cagnacci,
+  Heurich, Kjellander, Linnell, Nicoloso, Sustr, Urbano \&
+  Mysterud}]{morellet_seasonality_2013}
+Morellet, N., Bonenfant, C., Börger, L., Ossi, F., Cagnacci, F., Heurich, M.,
+  Kjellander, P., Linnell, J.D.C., Nicoloso, S., Sustr, P., Urbano, F. \&
+  Mysterud, A. 2013: Seasonality, weather and climate affect home range size in
+  roe deer across a wide latitudinal gradient within {Europe}.  -- Journal of
+  Animal Ecology 82(6): 1326--1339,
+  \urlprefix\url{http://dx.doi.org/10.1111/1365-2656.12105 DO -
+  10.1111/1365-2656.12105}.
+
+\bibitem[{Morellet et~al.(2009)Morellet, Verheyden, Angibault, Cargnelutti,
+  Lourtet \& Hewison}]{morellet_effect_2009}
+Morellet, N., Verheyden, H., Angibault, J.M., Cargnelutti, B., Lourtet, B. \&
+  Hewison, A.J.M. 2009: The effect of capture on ranging behaviour and activity
+  of the {European} roe deer {Capreolus} capreolus.  -- Wildlife Biology 15(3):
+  278--287.
+
+\bibitem[{Petrusková et~al.(2016)Petrusková, Pišvejcová, Kinštová, Brinke
+  \& Petrusek}]{petruskova_repertoire-based_2016}
+Petrusková, T., Pišvejcová, I., Kinštová, A., Brinke, T. \& Petrusek, A.
+  2016: Repertoire-based individual acoustic monitoring of a migratory
+  passerine bird with complex song as an efficient tool for tracking
+  territorial dynamics and annual return rates.  -- Methods in Ecology and
+  Evolution 7(3): 274--284,
+  \urlprefix\url{http://doi.wiley.com/10.1111/2041-210X.12496}.
+
+\bibitem[{Pyke et~al.(1996)Pyke, Christy \& Major}]{pyke_territoriality_1996}
+Pyke, G., Christy, M. \& Major, R. 1996: Territoriality in {Honeyeaters}:
+  {Reviewing} the {Concept} and {Evaluating} {Available} {Information}.  --
+  Australian Journal of Zoology 44(3): 297,
+  \urlprefix\url{http://www.publish.csiro.au/?paper=ZO9960297}.
+
+\bibitem[{Ratcliffe \& Mayle(1992)}]{ratcliffe_roe_1992}
+Ratcliffe, P. \& Mayle, B. 1992: Roe deer biology and management. Technical
+  report, Forestry Commission Bulletin 105. HMSO, London.
+
+\bibitem[{Severud et~al.(2015)Severud, Giudice, Obermoller, Enright, Wright \&
+  Forester}]{severud_using_2015}
+Severud, W.J., Giudice, G.D., Obermoller, T.R., Enright, T.A., Wright, R.G. \&
+  Forester, J.D. 2015: Using {GPS} collars to determine parturition and
+  cause-specific mortality of moose calves: {GPS} {Monitoring} of {Female}
+  {Moose} and {Calves}.  -- Wildlife Society Bulletin 39(3): 616--625,
+  \urlprefix\url{http://doi.wiley.com/10.1002/wsb.558}.
+
+\bibitem[{Silva et~al.(2017)Silva, Moreira \& Palmeirim}]{silva_spatial_2017}
+Silva, J.P., Moreira, F. \& Palmeirim, J.M. 2017: Spatial and temporal dynamics
+  of lekking behaviour revealed by high-resolution {GPS} tracking.  -- Animal
+  Behaviour 129: 197--204,
+  \urlprefix\url{http://linkinghub.elsevier.com/retrieve/pii/S0003347217301537}.
+
+\bibitem[{Vanpé et~al.(2009)Vanpé, Gaillard, Morellet, Kjellander, Liberg,
+  Delorme \& Hewison}]{vanpe_age-specific_2009}
+Vanpé, C., Gaillard, J.M., Morellet, N., Kjellander, P., Liberg, O., Delorme,
+  D. \& Hewison, A.J.M. 2009: Age-specific variation in male breeding success
+  of a territorial ungulate species, the {European} roe deer.  -- Journal of
+  Mammalogy 90(3): 661--665.
+
+\bibitem[{Vanpé et~al.(2008)Vanpé, Kjellander, Galan, Cosson, Aulagnier,
+  Liberg \& Hewison}]{vanpe_mating_2008}
+Vanpé, C., Kjellander, P., Galan, M., Cosson, J.F., Aulagnier, S., Liberg, O.
+  \& Hewison, A.J.M. 2008: Mating system, sexual dimorphism, and the
+  opportunity for sexual selection in a territorial ungulate.  -- Behavioral
+  Ecology 19(2): 309--316.
+
+\bibitem[{Walsh et~al.(2016)Walsh, Sethi, Lake, Mangipane, Nielson \&
+  Lowe}]{walsh_estimating_2016}
+Walsh, P.B., Sethi, S.A., Lake, B.C., Mangipane, B.A., Nielson, R. \& Lowe, S.
+  2016: Estimating denning date of wolves with daily movement and {GPS}
+  location fix failure: {Estimating} {Denning} {Date} of {Wolves}.  -- Wildlife
+  Society Bulletin 40(4): 663--668,
+  \urlprefix\url{http://doi.wiley.com/10.1002/wsb.703}.
+
+\bibitem[{Wood(2006)}]{wood_generalized_2006}
+Wood, S. 2006: Generalized {Additive} {Models}: {An} {Introduction} with {R}.
+  -- Chapman and Hall/CRC Press, Boca Raton, Florida.
 
 \bibitem[{Wronski(2005)}]{wronski_home-range_2005}
 Wronski, T. 2005: Home-range overlap and spatial organization as indicators for
