@@ -45,29 +45,29 @@ Nice abstract here
 
 Mating and reproduction affect many facets of an individual phenotype,
 changing its appearance and shape or shaping its life history and
-behaviour (Darwin 1871). \todo{Ajoute un commentaire} Across species
-the mating system is associated with a set of behaviours aiming at
-pairing individuals with sexual partners and increasing their
-reproductive success (Emlen and Oring 1977; Clutton-Brock 1989;
-Wittenberger 1979). Males of polygynous species frequently engaged
-into intense male-male fights, do not provide parental care to
-offspring and are often larger in size than females. In monogamous
-species, parents of the two sexes do care for the offspring, females
-chose their mating partner carefully and males often show display
-courtship behaviour (ref). Mating behaviour may also vary among
-populations or individuals of the same species (Lott 19XX, Dunbar
-1982). The environmental context such as population density or
-resource distribution can modulate what mating behaviour is expressed
-by most males (Verner and Willson 1966; Caranza et al. 1990). At the
-individual level, age, social status, body size or physiological
-states are tightly linked with the decision to reproduce and the type
-of mating tactic to be adopted. Being closely associated to
-reproductive success and fitness, mating and reproductive behaviours
-are under strong selection pressures and have received a lot of
-attention from ecologists. A careful understanding of the evolution of
-reproductive tactics and of mating systems hence requires to assess
-if, when, where and how long an individual did display
-reproductive-related behaviours.
+behaviour \citep{Darwin1871}. \todo{Ajoute un commentaire} Across
+species the mating system is associated with a set of behaviours
+aiming at pairing individuals with sexual partners and increasing
+their reproductive success
+\citep{Emlen1977,Clutton-Brock1989a,Wittenberger1979}. Males of
+polygynous species frequently engaged into intense male-male fights,
+do not provide parental care to offspring and are often larger in size
+than females. In monogamous species, parents of the two sexes do care
+for the offspring, females chose their mating partner carefully and
+males often show display courtship behaviour (ref). Mating behaviour
+may also vary among populations or individuals of the same species
+\citep{Lott1991,Dunbar1982}. The environmental context such as
+population density or resource distribution can modulate what mating
+behaviour is expressed by most males (Verner and Willson 1966; Caranza
+et al. 1990). At the individual level, age, social status, body size
+or physiological states are tightly linked with the decision to
+reproduce and the type of mating tactic to be adopted. Being closely
+associated to reproductive success and fitness, mating and
+reproductive behaviours are under strong selection pressures and have
+received a lot of attention from ecologists. A careful understanding
+of the evolution of reproductive tactics and of mating systems hence
+requires to assess if, when, where and how long an individual did
+display reproductive-related behaviours.
 
 Many species may, however, be secretive, inhabiting environments with
 poor visibility or present a nocturnal activity, so that
@@ -490,7 +490,7 @@ adult males (0.852$\pm$0.048).
   \label{tab:addlabel}
   \end{table}
  
-\begin{table}[htbp]
+\begin{table}[t]
   \centering
   \caption{Summaries of the candidate generalized linear models to
     investigate the probability of having two activity peaks in
@@ -524,25 +524,59 @@ adult males (0.852$\pm$0.048).
 \end{table}
 
 \newpage
+\begin{figure} [ht!]
+  \centering
+  \includegraphics[width=0.9\linewidth]{./figures/Fig2NB.pdf}
+  \caption{Temporal variations in residence time within a radius of
+    250 m (RT250), movement speed (speed), mean head movements on the
+    X axis (meanX) and mean head movements on the Y axis (meanY) for
+    adult male and female roe deer in the two study sites (AUR in
+    France and BAV in Germany), from 2002 to 2013 in AUR and from 2004
+    and 2015 in BAV. The time series starts on the 22nd of
+    December. The lines (and dotted lines) represent the separate GAMM
+    models for each variable (with the confidence intervals) including
+    a smoothed effect of time (Julian date) based on cyclic P-spline,
+    which differed among study sites, sexes and age classes. Based on
+    the literature, the light gray represents the assumed territorial
+    period, from the 1st of April to the 1st of September, and the
+    dark gray represents the birth period for females, from the 1st of
+    May to the 1st of June. Finally, for males the dark gray lines
+    represent the temporal window for the observed peaks in these
+    metrics in spring (20th of April and 1st of May for F:43° N and
+    D:49° N, respectively) and summer (1st of August and 25th of July
+    for F:43° N and D:49° N, respectively).}
+\end{figure}
 
+\newpage
 \begin{figure} [!h]
-\centering
-\caption{Todo.}
+  \centering
+  \includegraphics[width=0.9\linewidth]{./figures/Fig3b.pdf}
+  \caption{Temporal variations in mean head movements on the Y axis
+    for male and female roe deer among age classes in the two study
+    sites (AUR in France and BAV in Germany), from 2002 to 2013 in AUR
+    and from 2004 and 2015 in BAV. The time series starts on the 22nd
+    of December. The lines (and dotted lines) represent the GAMM
+    models (with the confidence intervals) including a smoothed effect
+    of time (Julian date) based on a cyclic P-spline, which differed
+    among study sites, sexes and age classes. Based on the literature,
+    the light gray represents the assumed territorial period, from the
+    1st of April to the 1st of September, and the dark gray represents
+    the birth period for females, from the 1st of May to the 1st of
+    June. Finally, for males the dark gray lines represent the
+    temporal window for the observed peaks in these metrics in spring
+    (20th of April and 1st of May for F:43° N and D:49° N,
+    respectively) and summer (1st of August and 25th of July for F:43°
+    N and D:49° N, respectively).}
 \end{figure}
 
 \begin{figure} [!h]
-\centering
-\caption{Temporal variations in residence time within a radius of 250 m (RT250), movement speed (speed), mean head movements on the X axis (meanX) and mean head movements on the Y axis (meanY) for adult male and female roe deer in the two study sites (AUR in France and BAV in Germany), from 2002 to 2013 in AUR and from 2004 and 2015 in BAV. The time series starts on the 22nd of December. The lines (and dotted lines) represent the separate GAMM models for each variable (with the confidence intervals) including a smoothed effect of time (Julian date) based on cyclic P-spline, which differed among study sites, sexes and age classes. Based on the literature, the light gray represents the assumed territorial period, from the 1st of April to the 1st of September, and the dark gray represents the birth period for females, from the 1st of May to the 1st of June. Finally, for males the dark gray lines represent the temporal window for the observed peaks in these metrics in spring (20th of April and 1st of May for F:43° N and D:49° N, respectively) and summer (1st of August and 25th of July for F:43° N and D:49° N, respectively).}
-\end{figure}
-
-\begin{figure} [!h]
-\centering
-\caption{Temporal variations in mean head movements on the Y axis for male and female roe deer among age classes in the two study sites (AUR in France and BAV in Germany), from 2002 to 2013 in AUR and from 2004 and 2015 in BAV. The time series starts on the 22nd of December. The lines (and dotted lines) represent the GAMM models (with the confidence intervals) including a smoothed effect of time (Julian date) based on a cyclic P-spline, which differed among study sites, sexes and age classes. Based on the literature, the light gray represents the assumed territorial period, from the 1st of April to the 1st of September, and the dark gray represents the birth period for females, from the 1st of May to the 1st of June. Finally, for males the dark gray lines represent the temporal window for the observed peaks in these metrics in spring (20th of April and 1st of May for F:43° N and D:49° N, respectively) and summer (1st of August and 25th of July for F:43° N and D:49° N, respectively).}
-\end{figure}
-
-\begin{figure} [!h]
-\centering
-\caption{The probability of having two temporal peaks of activity in relation to the sex and the age class, for roe deer monitored in two study sites (AUR in France and BAV in Germany), from 2002 to 2013 in AUR and from 2004 and 2015 in BAV. The dots (and segment lines) represent the GLM models (with the confidence intervals).}
+  \centering
+  \includegraphics[width=0.5\linewidth]{./figures/Fig4.pdf}
+  \caption{The probability of having two temporal peaks of activity in
+    relation to the sex and the age class, for roe deer monitored in
+    two study sites (AUR in France and BAV in Germany), from 2002 to
+    2013 in AUR and from 2004 and 2015 in BAV. The dots (and segment
+    lines) represent the GLM models (with the confidence intervals).}
 \end{figure}
 
 \end{document}
