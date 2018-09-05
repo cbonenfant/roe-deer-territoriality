@@ -177,52 +177,49 @@ little bustards]{silva_spatial_2017}.
 \section*{Material and Methods}
 \subsection*{Study areas}
 
-To assess the timing of territoriality and rutting behaviour in roe
-deer, we used the extensive GPS monitoring studies from two sites
+We used the extensive GPS monitoring studies from Aurignac and Bavaria
 which feature in the EURODEER database \citep{cagnacci_partial_2011}. We
-selected these study sites (Fig. 1) because they had large sample
-sizes for animals of both sexes and all three age-classes (see below).
+selected these two study sites (Fig. 1) because of the large sample
+sizes of monitored roe deer, and because of the good balance between sexes and the three age-classes they offer (see below).
 
-The study site in the Comminges region of south-west France (N 43° 13',
-E 0° 52', 110 km$^2$, hereafter AUR) is a hilly (max. 380 m a.s.l.) mixed
-landscape of open fields and small woodland patches, with two large
-forests (672 and 463 ha) and numerous small forest patches (covering
+The first study site is located in the Comminges region of south-western France (N 43° 13',
+E 0° 52', 110 km$^2$, hereafter AUR). The landscape is a hilly (max. 380 m a.s.l.) mixture
+of open fields and small woodland patches of sp, sp\todo{Ajouter les principales espèces ligneuses}, with two large
+forests (approx. 672 and 463 ha) and numerous small forest patches (covering
 19.3\% of the site). The remainder of the study site consists
-essentially of meadows for livestock grazing (37.2\%), crops (31.6\%),
-and hedgerows (3.6\%). The human population is present throughout the
-site, in small villages and farms that are distributed along the
-extensive road network. The climate is oceanic, with an average annual
-temperature of 11-12° C and 800 mm precipitation. The roe deer is
-hunted by stalking during summer (June-August) and drive hunts with
-dogs during autumn-winter (September to February).
+in meadows for livestock grazing (37.2\%), crops (31.6\%),
+and hedgerows (3.6\%) mostly. The anthropogenic pressure is high and homogeneous over the
+study site, characterized by numerous small villages and farms connected by an
+extensive road network. The climate is oceanic, \textit{i.e.} hot summers and relatively mild winters with an average annual
+temperature of 11-12° C and 800 mm precipitation over the last two decades \todo{Donner les valeurs pour janvier et février, c'est quand même saisonnier}. No large mammalian predator has ever been seen in the area but the roe deer is
+hunted. Hunters stalk male roe deer during the rut period between June and August, and conduct additional drive hunts with
+dogs from September to February. \todo{C'est peut-être ça qui rend les relation un peu moins nettes à Aurignac non ?}
 
-The study site in Germany and the Czech republic (N 49° 01', E 13° 40',
-3070 km², hereafter BAV) is a central European sub-mountainous forest,
-including two adjacent National Parks, the Bavarian Forest National
-Park (240 km$^2$) and the Šumava National Park (640 km$^2$) in Germany and
-Czech republic respectively (D:49° N). There is marked variation in
-elevation between 600 and 1450 m a.s.l. and the site consists
+The second study site is located in Germany and Czech republic (N 49°01', E 13°40',
+3070 km², hereafter BAV), putting together two adjacent national parks, the Bavarian Forest National
+Park (240 km$^2$) and the Šumava National Park (640 km$^2$) respectively (D:49°N). The landscape is typical of central European sub-mountainous forest,... \todo{to be
+  completed by Marco}
+Elevation varies substantially between 600 and 1450 m a.s.l. and the site consists
 essentially of forests of Norway spruce \species{picea abies L.}. The climate
-is continental, with an average annual temperature between 3°C and
-6.5° C depending on elevation, and an average annual precipitation of
+is continental, with an average annual temperature ranginf between 3°C and
+6.5°C depending on the elevation, and an average annual precipitation of
 between 830 and 2230 mm. The roe deer is hunted...\todo{to be
   completed by Marco}
 
 \subsection*{Data collection}
 For the AUR study site, from 2002-2013, roe deer were caught during
-winter (from November 16th to March 27th) using drives of 30-100
-beaters and 4 km of long-nets at one of 10 capture sites. For the BAV
+winter (from November 16th to March 27th) using net drives. Captures consist in setting 4 km of long-nets at one of the 10 capture sites, followed by 30--100
+beaters walking inside the enclosure and driving roe deer toward the nets. Captured animals are carefully handled and stored into a wooden box, waiting for processing. For the BAV
 study site; from 2004-2015, roe deer were caught during winter
-(October–March) using wooden box traps. Each roe deer was sexed and
+(October–March) using wooden box traps\todo{From when to when? A bit more details by Marco again}. Each roe deer was sexed and
 aged at capture (juveniles ca. 6-10 months old, yearlings ca. 18-22
-months old, adults $\geq$ 30 months old), we recorded also its weight
-(with an electronic balance to the nearest 0.1 kg). Juveniles are
+months old, adults $\geq$ 30 months old). Juveniles are
 distinguishable from older deer by the presence of a tricuspid third
 pre-molar milk tooth \citep{ratcliffe_roe_1992}, while yearlings can
 be quite reliably identified from the degree of tooth wear
-\citep{hewison_tests_1999}. Then, deer were equipped with GPS collars
+\citep{hewison_tests_1999}. Then, roe deer were equipped with GPS collars
 (mainly Lotek 3300 for AUR and Vectronic Aerospace for BAV) and
-released on site.
+released on site after handling.
 
 \subsection*{Data processing}
 We first selected and standardised location data among the two study
@@ -324,17 +321,16 @@ then to reduce the structure of residuals, we used the Box-Cox power
 transformation of the four variables using the boxcox function in the
 \textit{MASS} library implemented in R software, version 3.3.1 (R Core
 Team, 2016). We used the second order Akaike’s information criterion
-corrected for small sample size \citep[AICc][]{burnham_model_1998} and
+corrected for small sample size \citep[AICc,][]{burnham_model_1998} and
 Akaike weights ($w$) to select the model with the most support among
 the set of five candidate models constructed a priori. All generalized
-additive mixed models were fitted using the “gamm” function in the
-\textit{mgcv} library \cite{wood_generalized_2006} in \textbf{R}
+additive mixed models were fitted using the \textsf{gamm} function in the
+\textsf{mgcv} library \cite{wood_generalized_2006} in \textbf{\textsf{R}}
 software.\todo{penses-tu qu'il soit nécessaire d'expliquer que nous
-  avons augmenter le lissage} Finally, because the inclusion of
-non-sedentary animals might influence the analysis, to evaluate the
-robustness of our results, we eliminated all individuals that were not
-classified as sedentary following the approach described in
-\cite{cagnacci_partial_2011} and then repeated the analyses.
+  avons augmenter le lissage}  Finally, because the inclusion of
+non-sedentary animals might influence our results we eliminated all individuals that were not classified as sedentary following the approach described in
+\cite{cagnacci_partial_2011} and then replicated the analyses to evaluate the
+robustness of our results.
 
 \subsection*{At the individual level}
 To see whether it is possible to discriminate territorial and
@@ -356,7 +352,7 @@ previously denoised and smoothed the temporal metrics one by one with
 wavelets (from an original metrics, we retained the inverse discrete
 wavelet transform with the lowest frequency levels as the metrics to
 be considered in the clustering approach; R package
-\textit{wavethresh} REF=tps://www.springer.com/us/book/9780387759609)
+\textsf{wavethresh} REF=tps://www.springer.com/us/book/9780387759609)
 and we standardized the metrics. From the hierarchical clustering
 results, we deduced the partition of the individuals into two groups
 of similar metrics.
@@ -436,7 +432,8 @@ adult males (0.852$\pm$0.048).
 
 \section*{Discussion}
 
-\bibliography{nico,/home/christophe/Documents/bibtex/Kris_2006}
+\bibliography{nico%,/home/christophe/Documents/bibtex/Kris_2006
+}
 
 \newpage
 \begin{table}[htbp]
