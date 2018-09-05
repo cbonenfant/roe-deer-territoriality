@@ -1,0 +1,179 @@
+%%% ========================================================= %%%
+%%% Package oikos.sty                                         %%%
+%%% Bonenfant Christophe bonenfan@biomserv.univ-lyon1.fr      %%%
+%%% Mathieu Basille basille@biomserv.univ-lyon1.fr            %%%
+%%% 15.05.2010                                                %%%
+%%% ========================================================= %%%
+
+
+%%% Encodage et police
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\AtBeginDocument{\renewcommand\refname{\Large References}}
+%%% Package divers et langue
+\usepackage{graphicx,url,color}
+\usepackage[english]{babel}
+\usepackage{times}
+%%% Mise en page : A4 large, numérotation de toutes les lignes, interligne double, aligné
+%%% à gauche sans justification, paragraphes indentés
+\usepackage{a4wide}
+\usepackage{lineno}
+  \pagewiselinenumbers
+  \modulolinenumbers[2]
+\usepackage{setspace}
+%%%  \doublespacing
+\usepackage[document]{ragged2e}
+  \setlength\RaggedRightParindent{\parindent}
+  \setlength\RaggedRightRightskip{0pt plus 1fil}
+%%% Style de bibliographie adapté à Wildlife Biology, gestion des \cite dans le texte
+\usepackage{natbib}
+  \bibliographystyle{oikos}
+  \bibpunct{(}{)}{,}{a}{}{;}
+%%% Change the format of a figure caption
+%%% For more options see the package documentation
+\usepackage{ccaption}
+  \captionnamefont{\small}
+  \captiontitlefont{\small}
+  \captiondelim{.}
+  \hangcaption
+  \renewcommand{\figurename}{Figure}
+%%% Change les symboles des notes de bas de page
+\newcommand{\footnoteinfo}[2]{
+  \let\oldthefootnote\thefootnote%
+  \renewcommand{\thefootnote}{#1}%
+  \footnotetext[1]{#2}%
+  \let\thefootnote\oldthefootnote%
+}
+%%% Nom de la section bibliographie
+%%% \renewcommand\refname{Literature Cited}
+%%% Trois nouvelles commandes pour le '\maketitle' : 
+%%% '\running' : Running head
+%%% '\articletype' : type d'article en première page
+%%% '\keywordsname' : le nom de l'environnement keywords
+\newcommand{\@articletype}{}
+\newcommand{\articletype}[1]{\renewcommand{\@articletype}{#1}}
+\newcommand{\keywords}[1]{\par\addvspace\baselineskip
+\noindent\itshape Key words:\enspace\ignorespaces#1}
+\newcommand{\@Authmail}{}
+\newcommand{\Authmail}[1]{\renewcommand{\@Authmail}{#1}}
+\newcommand{\@affiliations}{}
+\newcommand{\affiliations}[1]{\renewcommand{\@affiliations}{#1}}
+
+
+%%% Commande '\maketitle' modifiée
+\if@compatibility
+\renewenvironment{titlepage}
+    {%
+      \if@twocolumn
+        \@restonecoltrue\onecolumn
+      \else
+        \@restonecolfalse\newpage
+      \fi
+      \thispagestyle{empty}%
+      \setcounter{page}\z@
+    }%
+    {\if@restonecol\twocolumn \else \fi
+    }
+\else
+\renewenvironment{titlepage}
+    {%
+      \if@twocolumn
+        \@restonecoltrue\onecolumn
+      \else
+        \@restonecolfalse\newpage
+      \fi
+      \thispagestyle{empty}%
+      \setcounter{page}\@ne
+    }%
+    {\if@restonecol\twocolumn \else \fi
+     \if@twoside\else
+        \setcounter{page}\@ne
+     \fi
+    }
+\fi
+
+\usepackage{enumitem}
+
+\renewcommand\maketitle{\begin{titlepage}%
+\let\footnotesize\small
+\let\footnoterule\relax
+\let \footnote \thanks
+\vskip 5pt%
+\normalfont\normalsize
+\begin{raggedright}%
+  {\sffamily\huge\bfseries \@title \par}%
+  \vskip 4em%
+\end{raggedright}%
+
+{\hspace{-3.5em}\raggedright\sffamily\bfseries\Large\parbox{\textwidth}{
+    \begin{tabular}[t]{l}%
+      \@author
+    \end{tabular}}\par%
+  \vskip 4em%
+}%
+
+\begin{raggedright}
+  \begin{enumerate}[leftmargin=*,labelsep=-0.5em,labelwidth=0em]%
+    \normalfont\normalsize\itshape%
+    \@affiliations%
+  \end{enumerate}%
+\end{raggedright}
+
+\@thanks
+\normalsize
+\vskip 5pt
+\end{titlepage}%
+\global\let\thanks\relax
+\global\let\maketitle\relax
+\global\let\@thanks\@empty
+\global\let\@author\@empty
+\global\let\@date\@empty
+\global\let\@title\@empty
+\global\let\title\relax
+\global\let\author\relax
+\global\let\date\relax
+\global\let\and\relax
+\thispagestyle{empty}
+}
+
+%%% Pour la gestion des auteurs/affiliations (bricolage, je n'arrive pas à intégrer
+%%% correctement les commandes du paquets pour faire le même travail.
+% \usepackage{authblk} \setlength{\affilsep}{10pt}
+% \renewcommand\Authfont{\raggedright\sffamily\bfseries\large}
+% \renewcommand\Affilfont{\raggedright\normalfont\normalsize\itshape}
+% \renewcommand\AB@authnote[1]{}
+% \renewcommand\AB@affilnote[1]{}
+% \renewcommand\Authands{ \& }
+
+%%% Environnement 'thebibliography' en \small
+\let\orig@thebibliography\thebibliography
+\let\endorig@thebibliography\endthebibliography
+\renewenvironment*{thebibliography}
+{\small%
+ \orig@thebibliography}%
+{\endorig@thebibliography}
+
+%%% Environnement 'abstract' dans le style du journal
+\renewenvironment{abstract}{%
+  \small
+  \begin{center}%
+    {\normalsize\normalfont}%
+  \end{center}%
+  \quotation\noindent\ignorespaces}
+{\endquotation}
+
+%%% Style des titres (pas de numérotation, utiliser \section*
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+  {-3.5ex \@plus -1ex \@minus -.2ex}%
+  {2.3ex \@plus.2ex}%
+  {\sffamily\large\bfseries}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+  {-3.25ex\@plus -1ex \@minus -.2ex}%
+  {1.5ex \@plus .2ex}%
+  {\sffamily\bfseries}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+  {-3.25ex\@plus -1ex \@minus -.2ex}%
+  {1.5ex \@plus .2ex}%
+  {\sffamily\itseries\normalsize}}
+
