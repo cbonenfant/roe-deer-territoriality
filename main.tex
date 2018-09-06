@@ -15,8 +15,8 @@
 \geometry{verbose,letterpaper,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=5.5cm}
 \newcommand{\nico}[1]{\todo[backgroundcolor=red!25,bordercolor=red]{\small #1}}
 \newcommand{\nicoin}[1]{\todo[inline,backgroundcolor=red!25,bordercolor=red]{\small #1}}
-\newcommand{\mark}[1]{\todo[backgroundcolor=green!25,bordercolor=green]{\small #1}}
-\newcommand{\markin}[1]{\todo[inline,backgroundcolor=green!25,bordercolor=green]{\small #1}}
+\newcommand{\Mark}[1]{\todo[backgroundcolor=green!25,bordercolor=green]{\small #1}}
+\newcommand{\Markin}[1]{\todo[inline,backgroundcolor=green!25,bordercolor=green]{\small #1}}
 \newcommand{\kris}[1]{\todo[backgroundcolor=blue!25,bordercolor=blue]{\small #1}}
 \newcommand{\krisin}[1]{\todo[inline,backgroundcolor=blue!25,bordercolor=blue]{\small #1}}
 % To add comments (end)
@@ -57,10 +57,9 @@ Nice abstract here
 
 Mating and reproduction affect many facets of an individual phenotype,
 changing its appearance and shape or shaping its life history and
-behaviour \citep{Darwin1871}. Across
-species the mating system is associated with a set of behaviours
-aiming at pairing individuals with sexual partners and increasing
-their reproductive success
+behaviour \citep{Darwin1871}. Across species the mating system is
+associated with a set of behaviours aiming at pairing individuals with
+sexual partners and increasing their reproductive success
 \citep{Emlen1977,Clutton-Brock1989a,Wittenberger1979}. Males of
 polygynous species frequently engaged into intense male-male fights,
 do not provide parental care to offspring and are often larger in size
@@ -84,17 +83,17 @@ display reproductive-related behaviours.
 Many species may, however, be secretive, inhabiting environments with
 poor visibility or present a nocturnal activity, so that
 reproductive-related behaviours are difficult to observe directly or
-to quantify accurately \citep{maher_definitions_1995}. For instance, we
-currently have a huge gap of knowledge in the reproductive behaviour
-of XXX and XXX because of the observation limitation imposed by the
-species lifestyle and its habitat preferences. In this context,
+to quantify accurately \citep{maher_definitions_1995}. For instance,
+we currently have a huge gap of knowledge in the reproductive
+behaviour of XXX and XXX because of the observation limitation imposed
+by the species lifestyle and its habitat preferences. In this context,
 indirect measures, like display of agonistic interactions monitored by
-individual acoustic \citep{petruskova_repertoire-based_2016} or spatial
-organization can be quantified in order to infer a territorial status
-\citep{wronski_home-range_2005,corlatti_hormones_2012} or to assess
-whether an individual engaged into reproduction or not. GPS systems
-and activity sensors provide powerful new tools to ecologists for
-remote monitoring of spatial behaviour
+individual acoustic \citep{petruskova_repertoire-based_2016} or
+spatial organization can be quantified in order to infer a territorial
+status \citep{wronski_home-range_2005,corlatti_hormones_2012} or to
+assess whether an individual engaged into reproduction or not. GPS
+systems and activity sensors provide powerful new tools to ecologists
+for remote monitoring of spatial behaviour
 \citep{cagnacci_animal_2010,kie_home-range_2010,kays_terrestrial_2015}. These
 devices provide intensive data acquisition with which to infer
 behavioural patterns previously impossible or very difficult to
@@ -190,50 +189,69 @@ little bustards]{silva_spatial_2017}.
 \subsection*{Study areas}
 
 We used the extensive GPS monitoring studies from Aurignac and Bavaria
-which feature in the EURODEER database \citep{cagnacci_partial_2011}. We
-selected these two study sites (Fig. 1) because of the large sample
-sizes of monitored roe deer, and because of the good balance between sexes and the three age-classes they offer (see below).
+which feature in the EURODEER database
+\citep{cagnacci_partial_2011}. We selected these two study sites
+(Fig. 1) because of the large sample sizes of monitored roe deer, and
+because of the good balance between sexes and the three age-classes
+they offer (see below).
 
-The first study site is located in the Comminges region of south-western France (N 43° 13',
-E 0° 52', 110 km$^2$, hereafter AUR). The landscape is a hilly (max. 380 m a.s.l.) mixture
-of open fields and small woodland patches dominated by oak  \species{Quercus spp.}, often associated with hornbeam  \species{Carpinus betulus}, with two large
-forests (approx. 672 and 463 ha) and numerous small forest patches (covering
-19.3\% of the site). The remainder of the study site consists
-in meadows for livestock grazing (37.2\%), crops (31.6\%),
-and hedgerows (3.6\%) mostly. The anthropogenic pressure is high and homogeneous over the
-study site, characterized by numerous small villages and farms connected by an
-extensive road network. The climate is oceanic, \textit{i.e.} hot summers and relatively mild winters with an average annual
-temperature of 12.5°C [11.6-13.4] and 685 mm [535-1025] precipitation over the period of the study (with an average monthly temperature of 4.5°C versus 21.1°C and 63.3 mm versus 37.2 mm precipitation in January and July, respectively over the period of the study, data from METEO-FRANCE) \nico{cela te va comme ça?}. No large mammalian predator has ever been seen in the area but the roe deer is
-hunted. Hunters stalk male roe deer during the rut period between June and August, and conduct additional drive hunts with
-dogs from September to February. \todo{C'est peut-être ça qui rend les relation un peu moins nettes à Aurignac non ? } \nico{peut-être, il y a aussi que l'activité des colliers GPS Lotek 3300 n'a rien à voir avec l'activité des collier Vectronics}
+The first study site is located in the Comminges region of
+south-western France (N 43° 13', E 0° 52', 110 km$^2$, hereafter
+AUR). The landscape is a hilly (max. 380 m a.s.l.) mixture of open
+fields and small woodland patches dominated by oak \species{Quercus
+  spp.}, often associated with hornbeam \species{Carpinus betulus},
+with two large forests (approx. 672 and 463 ha) and numerous small
+forest patches (covering 19.3\% of the site). The remainder of the
+study site consists in meadows for livestock grazing (37.2\%), crops
+(31.6\%), and hedgerows (3.6\%) mostly. The anthropogenic pressure is
+high and homogeneous over the study site, characterized by numerous
+small villages and farms connected by an extensive road network. The
+climate is oceanic, \textit{i.e.} hot summers and relatively mild
+winters with an average monthly temperature of 4.5°C versus 21.1°C and
+63.3 mm versus 37.2 mm precipitation in January and July, respectively
+over the period of the study (data from Météofrance)\kris{J'ai
+  simplement laissé les moyennes saisonnières}. No large mammalian
+predator has ever been seen in the area but the roe deer is commonly
+hunted. Hunters stalk male roe deer during the rut period between June
+and August, and conduct additional drive hunts with dogs from
+September to February. \todo{C'est peut-être ça qui rend les relation
+  un peu moins nettes à Aurignac non ? } \nico{peut-être, il y a aussi
+  que l'activité des colliers GPS Lotek 3300 n'a rien à voir avec
+  l'activité des collier Vectronics}
 
-The second study site is located in Germany and Czech republic (N 49°01', E 13°40',
-3070 km², hereafter BAV), putting together two adjacent national parks, the Bavarian Forest National
-Park (240 km$^2$) and the Šumava National Park (640 km$^2$) respectively (D:49°N). The landscape is typical of central European sub-mountainous forest,... \todo{to be
-  completed by Marco}
-Elevation varies substantially between 600 and 1450 m a.s.l. and the site consists
-essentially of forests of Norway spruce \species{picea abies L.}. The climate
-is continental, with an average annual temperature ranginf between 3°C and
-6.5°C depending on the elevation, and an average annual precipitation of
-between 830 and 2230 mm. The roe deer is hunted...\todo{to be
-  completed by Marco}
+The second study site is located in Germany and Czech republic (N
+49°01', E 13°40', 3070 km², hereafter BAV), putting together two
+adjacent national parks, the Bavarian Forest National Park (240
+km$^2$) and the Šumava National Park (640 km$^2$) respectively
+(D:49°N). The landscape is typical of central European sub-mountainous
+forest,... \todo{to be completed by Marco} Elevation varies
+substantially between 600 and 1450 m a.s.l. and the site consists
+essentially of forests of Norway spruce \species{picea abies L.}. The
+climate is continental, with an average annual temperature ranginf
+between 3°C and 6.5°C depending on the elevation, and an average
+annual precipitation of between 830 and 2230 mm. The roe deer is
+hunted...\todo{to be completed by Marco}
 
 \subsection*{Data collection}
 For the AUR study site, from 2002-2013, roe deer were caught during
-winter (from November 16th to March 27th) using net drives. Captures consist in setting 4 km of long-nets at one of the 10 capture sites, followed by 30--100
-beaters walking inside the enclosure and driving roe deer toward the nets. Captured animals are carefully handled and stored into a wooden box, waiting for processing. For the BAV
-study site; from 2004-2015, roe deer were caught during winter
-(October–March) using wooden box traps\todo{From when to when? A bit more details by Marco again}. Each roe deer was sexed and
-aged at capture (juveniles ca. 6-10 months old, yearlings ca. 18-22
-months old, adults $\geq$ 30 months old). Juveniles are
-distinguishable from older deer by the presence of a tricuspid third
-pre-molar milk tooth \citep{ratcliffe_roe_1992}, while yearlings can
-be quite reliably identified from the degree of tooth wear
-\citep{hewison_tests_1999}. Then, roe deer were equipped with GPS collars
-(mainly Lotek 3300 for AUR and Vectronic Aerospace for BAV) and
-released on site after handling.
+winter (from November 16th to March 27th) using net drives. Captures
+consist in setting 4 km of long-nets at one of the 10 capture sites,
+followed by 30--100 beaters walking inside the enclosure and driving
+roe deer toward the nets. Captured animals are carefully handled and
+stored into a wooden box, waiting for processing. For the BAV study
+site; from 2004-2015, roe deer were caught during winter
+(October–March) using wooden box traps\todo{From when to when? A bit
+  more details by Marco again}. Each roe deer was sexed and aged at
+capture (juveniles ca. 6-10 months old, yearlings ca. 18-22 months
+old, adults $\geq$ 30 months old). Juveniles are distinguishable from
+older deer by the presence of a tricuspid third pre-molar milk tooth
+\citep{ratcliffe_roe_1992}, while yearlings can be quite reliably
+identified from the degree of tooth wear
+\citep{hewison_tests_1999}. Then, roe deer were equipped with GPS
+collars (mainly Lotek 3300 for AUR and Vectronic Aerospace for BAV)
+and released on site after handling.
 
-\subsection*{Data processing}
+\subsection*{Location data processing}
 We first selected and standardised location data among the two study
 sites. We removed all locations recorded during the first week of
 monitoring after an animal’s capture and release because of potential
@@ -292,9 +310,13 @@ separately for both the X and Y axes.
 
 \section*{Statistical analyses}
 
-No behavioural field observations were collected to confront movement patterns with territoriality and rut. We therefore quantified the predictive performance of movements patterns in two steps. We first described at the population
+No behavioural field observations were collected to confront movement
+patterns with territoriality and rut. We therefore quantified the
+predictive performance of movements patterns in two steps. We first
+described at the population
 
- by quantifying our ability to categorize individuals as males or females from
+by quantifying our ability to categorize individuals as males or
+females from
 
 \subsection*{At the population level}
 To detect territorial and/or rutting behaviour, we compared the
@@ -338,16 +360,19 @@ then to reduce the structure of residuals, we used the Box-Cox power
 transformation of the four variables using the boxcox function in the
 \textsf{MASS} library implemented in R software, version 3.3.1 (R Core
 Team, 2016). We used the second order Akaike’s information criterion
-corrected for small sample size \citep[AICc,][]{burnham_model_1998} and
-Akaike weights ($w$) to select the model with the most support among
-the set of five candidate models constructed a priori. All generalized
-additive mixed models were fitted using the \textsf{gamm} function in the
-\textsf{mgcv} library \cite{wood_generalized_2006} in \textbf{\textsf{R}}
-software.\nico{penses-tu qu'il soit nécessaire d'expliquer que nous
-  avons augmenter le lissage}\kris{Je pense que oui, en plus j'ai l'impression que c'est pas bien connu cette histoire...}  Finally, because the inclusion of
-non-sedentary animals might influence our results we eliminated all individuals that were not classified as sedentary following the approach described in
-\cite{cagnacci_partial_2011} and then replicated the analyses to evaluate the
-robustness of our results.
+corrected for small sample size \citep[AICc,][]{burnham_model_1998}
+and Akaike weights ($w$) to select the model with the most support
+among the set of five candidate models constructed a priori. All
+generalized additive mixed models were fitted using the \textsf{gamm}
+function in the \textsf{mgcv} library \cite{wood_generalized_2006} in
+\textbf{\textsf{R}} software.\nico{penses-tu qu'il soit nécessaire
+  d'expliquer que nous avons augmenter le lissage}\kris{Je pense que
+  oui, en plus j'ai l'impression que c'est pas bien connu cette
+  histoire...}  Finally, because the inclusion of non-sedentary
+animals might influence our results we eliminated all individuals that
+were not classified as sedentary following the approach described in
+\cite{cagnacci_partial_2011} and then replicated the analyses to
+evaluate the robustness of our results.
 
 \subsection*{At the individual level}
 To see whether it is possible to discriminate territorial and
@@ -449,8 +474,7 @@ adult males (0.852$\pm$0.048).
 
 \section*{Discussion}
 
-\bibliography{nico%,/home/christophe/Documents/bibtex/Kris_2006
-}
+\bibliography{nico,/home/christophe/Documents/bibtex/Kris_2006}
 
 \newpage
 \begin{table}[htbp]
@@ -465,11 +489,11 @@ adult males (0.852$\pm$0.048).
     individual roe deer with at least 75\% of scheduled locations in
     the two study sites (AUR in France and BAV in Germany), from 2002
     to 2013 in AUR and from 2004 and 2015 in BAV. The most supported
-    model, based on the differences in the values for $\Delta$AICc and Akaike
-    weights ($w$), is reported in bold. All models including a two-way
-    interaction also include main effects. AICc is the value of the
-    corrected Akaike’s information criterion and df is the number of
-    degree of freedom for each model.}
+    model, based on the differences in the values for $\Delta$AICc and
+    Akaike weights ($w$), is reported in bold. All models including a
+    two-way interaction also include main effects. AICc is the value
+    of the corrected Akaike’s information criterion and df is the
+    number of degree of freedom for each model.}
   
     \begin{tabular}{rrrrrr}
       \\
