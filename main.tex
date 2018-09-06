@@ -310,13 +310,29 @@ separately for both the X and Y axes.
 
 \section*{Statistical analyses}
 
-No behavioural field observations were collected to confront movement
-patterns with territoriality and rut. We therefore quantified the
-predictive performance of movements patterns in two steps. We first
-described at the population
-
-by quantifying our ability to categorize individuals as males or
-females from
+Because it is quite hard to characterize specifically on marked
+individuals, no behavioural field observations were collected to be
+associated with the observed movement patterns linked to
+territoriality and rut of males. Because mainly adult males should
+engaged into reproduction, we instead attempted to quantify the
+specificity of male movement and activity patterns with regards to
+territorial and rutting behaviours as follows. As a first step, we
+described the temporal variation in movement and activity variables at
+the population level, and tested for age and sex effects. This served
+as an \textit{a priori} analyses of the metrics, testing for the
+differences between an average male and female of varying ages. At
+this stage, we searched for some particular patterns that would show
+up in adult males only. As a second step, we ran an uninformed
+classification procedure aiming at pooling \textit{a posteriori} in
+the same group individuals with similar temporal variation of movement
+and activity variables. Because territorial status was unknown, we
+therefore evaluated the composition of these groups in terms of sex
+and age classes since only males are expected to be territorial and
+mostly adults. We assumed that a high proportion of individuals of the
+same sex belong to the same group would be a sign of good discriminant
+power and ability to infer a male's mating behaviour from movement and
+activity. Below we detail the analyses at the population and individual
+levels.
 
 \subsection*{At the population level}
 To detect territorial and/or rutting behaviour, we compared the
@@ -330,42 +346,43 @@ subsequent rutting period (the second of their life), yearlings at
 capture become sub-adults (third rut of their life), while adults at
 capture remain adult during the subsequent rutting event.
 
-We analysed the temporal patterns of the four metrics, i.e. residence
-time in a radius of 250 m (RT250), movement speed (speed), mean head
-movements on the X axis (meanX) and on the Y axis (meanY). We used
-generalised additive mixed models (GAMMs) to model these four
-dependant variables separately, including roe deer identity as a
-random factor to control for repeated observations per individual. We
-used GAMM rather than standard linear models because GAMMs capture
-nonlinear temporal variation more efficiently. We used cyclic
-P-splines to smooth the effect of time to account for the cyclic
-pattern of the dependant variables over the year. Because day length
-influences the ranging behaviour of roe deer
+We analysed the temporal patterns of the four metrics, \textit{i.e.}
+residence time in a radius of 250 m (RT250), movement speed (speed),
+mean head movements on the X axis (meanX) and on the Y axis
+(meanY). We used generalised additive mixed models (GAMMs) to model
+these four dependant variables separately, including roe deer identity
+as a random factor to control for repeated observations per
+individual. We used GAMM rather than standard linear models because
+GAMMs capture nonlinear temporal variation more efficiently. We used
+cyclic P-splines to smooth the effect of time to account for the
+cyclic pattern of the dependant variables over the year. Because day
+length influences the ranging behaviour of roe deer
 \citep{borger_integrated_2006}, we arbitrarily set the winter solstice
 (December 22nd) as the common starting day (Julian date = 1) for both
 study sites \cite[see also][]{morellet_seasonality_2013}. We included
 sex (two modalities), age class (three modalities) and study site (two
-modalities) as explanatory factors. For each dependent variable
-separately, we compared five models: a model containing only the
-spline of the Julian date (baseline model), a model including a
-sex-specific temporal effect (i.e. a spline of Julian date for each
-sex), a model including both a sex-specific and age-specific temporal
-effect, a model including a sex-specific and a site-specific temporal
-effect, and a model including a sex-specific, age-specific and
-site-specific temporal effect. We systematically included sex in all
-models other than the baseline model as there was a strong a priori
-reason to expect the temporal pattern should differ between sexes (see
-above). In order to improve the quality of the fit of GAMM models and
-then to reduce the structure of residuals, we used the Box-Cox power
-transformation of the four variables using the boxcox function in the
-\textsf{MASS} library implemented in R software, version 3.3.1 (R Core
-Team, 2016). We used the second order Akaike’s information criterion
-corrected for small sample size \citep[AICc,][]{burnham_model_1998}
-and Akaike weights ($w$) to select the model with the most support
-among the set of five candidate models constructed a priori. All
-generalized additive mixed models were fitted using the \textsf{gamm}
-function in the \textsf{mgcv} library \cite{wood_generalized_2006} in
-\textbf{\textsf{R}} software.\nico{penses-tu qu'il soit nécessaire
+modalities) as explanatory factors.
+
+For each dependent variable separately, we compared five models: a
+model containing only the spline of the Julian date (baseline model),
+a model including a sex-specific temporal effect (i.e. a spline of
+Julian date for each sex), a model including both a sex-specific and
+age-specific temporal effect, a model including a sex-specific and a
+site-specific temporal effect, and a model including a sex-specific,
+age-specific and site-specific temporal effect. We systematically
+included sex in all models other than the baseline model as there was
+a strong a priori reason to expect the temporal pattern should differ
+between sexes (see above). In order to improve the quality of the fit
+of GAMM models and then to reduce the structure of residuals, we used
+the Box-Cox power transformation of the four variables using the
+boxcox function in the \textsf{MASS} library. We used the second order
+Akaike’s information criterion corrected for small sample size
+\citep[AICc,][]{burnham_model_1998} and Akaike weights ($w$) to select
+the model with the most support among the set of five candidate models
+constructed a priori. All generalized additive mixed models were
+fitted using the \textsf{gamm} function in the \textsf{mgcv} library
+\cite{wood_generalized_2006} in \textbf{\textsf{R}} software version
+3.3.1 (R Core Team, 2016).\nico{penses-tu qu'il soit nécessaire
   d'expliquer que nous avons augmenter le lissage}\kris{Je pense que
   oui, en plus j'ai l'impression que c'est pas bien connu cette
   histoire...}  Finally, because the inclusion of non-sedentary
@@ -375,17 +392,17 @@ were not classified as sedentary following the approach described in
 evaluate the robustness of our results.
 
 \subsection*{At the individual level}
-To see whether it is possible to discriminate territorial and
-non-territorial animals, we used an unsupervised clustering method
-based on the three temporal metrics speed, meanX and meanY. We did not
-consider RT250 at this stage as this metric was less informative at
-population level (see Results). We performed a hierarchical
-clustering, a classical technique that groups individuals together if
-they present similar temporal metrics. This method requires a single
+To test whether we could discriminate territorial from non-territorial
+male roe deer, we used an unsupervised clustering method based on the
+three temporal metrics speed, meanX and meanY. We did not consider
+RT250 at this stage as this metric was less informative than at
+population level (see Results). We performed a hierarchical clustering
+(ref), a classical technique that groups individuals together if they
+present similar temporal metrics. This method requires a single
 distance matrix computed on the basis of the three metrics:
 consequently, for any pair of individuals, we computed the quadratic
-mean of 1/ the distance between the two speed metrics and 2/ the
-distance between the two activity metrics (meanX and meanY taken
+mean of ($i$) the distance between the two speed metrics and ($ii$)
+the distance between the two activity metrics (meanX and meanY taken
 together) of this pair of individuals. Since the temporal metrics can
 be highly fluctuating between subsequent locations, the distance
 between the metrics of two individuals can be overestimated due to
@@ -397,28 +414,31 @@ be considered in the clustering approach; R package
 \textsf{wavethresh} REF=tps://www.springer.com/us/book/9780387759609)
 and we standardized the metrics. From the hierarchical clustering
 results, we deduced the partition of the individuals into two groups
-of similar metrics.
+of similar metrics.\krisin{Je me demande ici si ce n'est pas embêtant
+  que l'on n'ai pas utilisé les mêmes méthodes de lissage, à l'échelle
+  pop et indiv. Donnent-elles des choses différentes? On pourrait
+  regarder vite fait? A tout le moins, comment justifier ces choix
+  autrement que par le fait que les GAMM ne proposent pas de wavelet
+  et dans ce cas, pourquoi ne pas avoir utilisé les GAMM ici pour la
+  méthode de classification.}
 
-As territorial status was unknown, we evaluated the composition of
-these groups in terms of sex and age classes since only males are
-expected to be territorial and mostly adults. As we generated two
-groups of individuals (see Results), we performed generalized linear
-models with a logit link function to analyse groups in relation to sex
-(male versus female), study site (AUR versus BAV) and age class
-(yearlings, sub-adults and adults). As we expected to observe the
-territorial behaviour mostly on adult roe deer and in order to make
-sure we obtained the same results over the two sites, we included also
-the three-way interactions between these sex, site and age class (and
-all two-way interactions) in the most complex model. Due to missing
-data for the hierarchical clustering of some individuals, sample size
-for this analysis (individuals with at least 75\% of the scheduled
-locations) was 52 and 168 individuals for BAV and AUR,
+The clustering methods returned two groups of individuals (see
+Results), that we analyzed as binary response variable. We performed
+generalized linear models with a logit link function to analyse the
+probability of an individual to belong to group 1 in relation to sex
+(male \textit{vs.} female), study site (AUR \textit{vs.} BAV) and age
+class (yearlings, sub-adults and adults). As we expected to observe
+the territorial behaviour mostly on adult roe deer and in order to
+make sure we obtained the same results over the two sites, we included
+also the three-way interactions between these sex, site and age class
+(and all two-way interactions) in the most complex model. Due to
+missing data for the hierarchical clustering of some individuals with
+at least 75\% of the scheduled locations, sample size for this
+analysis was 52 and 168 individuals for BAV and AUR,
 respectively.\nico{On n'a pas le même nombre d'individus à l'issu du
-  clustering} To identify the best supported model, we again used the
-second order Akaike’s information criterion corrected for small sample
-size.
-
-We used the \textit{dredge} function in the \textit{MuMIn} library to
+  clustering} We performed our model selection with the second order
+Akaike’s information criterion corrected for small sample size. We
+used the \textit{dredge} function in the \textit{MuMIn} library to
 generate all sets of models \citep{barton_mumin:_2016}.
 
 \section*{Results}
