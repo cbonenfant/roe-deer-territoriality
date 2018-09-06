@@ -4,11 +4,22 @@
 %% Useful packages
 \usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage[colorinlistoftodos]{todonotes}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 %% Add the following packages in the oikos.sty file
 \usepackage{textcomp}
 \usepackage{mfirstuc}
+
+% To add comments (begin)
+\usepackage[textwidth=4.5cm]{todonotes}
+\usepackage{geometry}
+\geometry{verbose,letterpaper,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=5.5cm}
+\newcommand{\nico}[1]{\todo[backgroundcolor=red!25,bordercolor=red]{\small #1}}
+\newcommand{\nicoin}[1]{\todo[inline,backgroundcolor=red!25,bordercolor=red]{\small #1}}
+\newcommand{\mark}[1]{\todo[backgroundcolor=green!25,bordercolor=green]{\small #1}}
+\newcommand{\markin}[1]{\todo[inline,backgroundcolor=green!25,bordercolor=green]{\small #1}}
+\newcommand{\kris}[1]{\todo[backgroundcolor=blue!25,bordercolor=blue]{\small #1}}
+\newcommand{\krisin}[1]{\todo[inline,backgroundcolor=blue!25,bordercolor=blue]{\small #1}}
+% To add comments (end)
 
 %% new commands
 \newcommand{\species}[1]{(\xmakefirstuc{\emph{#1}})}
@@ -22,13 +33,13 @@
   \ldots\\ \& Hewison A.J. Mark}
   
 
-\affiliations{Christophe Bonenfant  \todo{Il faudrait revoir l'ordre des auteurs, ci-dessus!}, Vincent Miele and Jean-Michel
-  Gaillard\todo{? really} , Université de Lyon, Université Lyon 1, CNRS, UMR5558,
+\affiliations{Christophe Bonenfant, Vincent Miele and Jean-Michel
+  Gaillard, Université de Lyon, Université Lyon 1, CNRS, UMR5558,
   Laboratoire de Biométrie et Biologie {\'E}volutive, Bâtiment
   G. Mendel, 43 boulevard du 11 novembre 1918, F-69622, Villeurbanne,
   France - e-mail addresses: christophe.bonenfant@univ-lyon1.fr
   (Christophe Bonenfant); miele.vincent@univ-lyon1.fr (Vincent Miele);
-  jean-michel.gaillard@univ-lyon1.fr (Jean-Michel Gaillard) --
+  jean-michel.gaillard@univ-lyon1.fr (Jean-Michel Gaillard) -- 
 }
 
 \begin{document}
@@ -46,7 +57,7 @@ Nice abstract here
 
 Mating and reproduction affect many facets of an individual phenotype,
 changing its appearance and shape or shaping its life history and
-behaviour \citep{Darwin1871}. \todo{Ajoute un commentaire} Across
+behaviour \citep{Darwin1871}. Across
 species the mating system is associated with a set of behaviours
 aiming at pairing individuals with sexual partners and increasing
 their reproductive success
@@ -192,9 +203,9 @@ in meadows for livestock grazing (37.2\%), crops (31.6\%),
 and hedgerows (3.6\%) mostly. The anthropogenic pressure is high and homogeneous over the
 study site, characterized by numerous small villages and farms connected by an
 extensive road network. The climate is oceanic, \textit{i.e.} hot summers and relatively mild winters with an average annual
-temperature of 12.5°C [11.6-13.4] and 685 mm [535-1025] precipitation over the period of the study (with an average monthly temperature of 4.5°C versus 21.1°C and 63.3 mm versus 37.2 mm precipitation in January and July, respectively over the period of the study, data from METEO-FRANCE) \todo{cela te va comme ça?}. No large mammalian predator has ever been seen in the area but the roe deer is
+temperature of 12.5°C [11.6-13.4] and 685 mm [535-1025] precipitation over the period of the study (with an average monthly temperature of 4.5°C versus 21.1°C and 63.3 mm versus 37.2 mm precipitation in January and July, respectively over the period of the study, data from METEO-FRANCE) \nico{cela te va comme ça?}. No large mammalian predator has ever been seen in the area but the roe deer is
 hunted. Hunters stalk male roe deer during the rut period between June and August, and conduct additional drive hunts with
-dogs from September to February. \todo{C'est peut-être ça qui rend les relation un peu moins nettes à Aurignac non ? peut-être, il y a aussi que l'activité des colliers GPS Lotek 3300 n'a rien à voir avec l'activité des collier Vectronics}
+dogs from September to February. \todo{C'est peut-être ça qui rend les relation un peu moins nettes à Aurignac non ? } \nico{peut-être, il y a aussi que l'activité des colliers GPS Lotek 3300 n'a rien à voir avec l'activité des collier Vectronics}
 
 The second study site is located in Germany and Czech republic (N 49°01', E 13°40',
 3070 km², hereafter BAV), putting together two adjacent national parks, the Bavarian Forest National
@@ -280,6 +291,11 @@ centred on each theoretical GPS location (\textit{i.e.} at 00:00,
 separately for both the X and Y axes.
 
 \section*{Statistical analyses}
+
+No behavioural field observations were collected to confront movement patterns with territoriality and rut. We therefore quantified the predictive performance of movements patterns in two steps. We first described at the population
+
+ by quantifying our ability to categorize individuals as males or females from
+
 \subsection*{At the population level}
 To detect territorial and/or rutting behaviour, we compared the
 movement and activity metrics of male and female juveniles, yearlings
@@ -320,15 +336,15 @@ reason to expect the temporal pattern should differ between sexes (see
 above). In order to improve the quality of the fit of GAMM models and
 then to reduce the structure of residuals, we used the Box-Cox power
 transformation of the four variables using the boxcox function in the
-\textit{MASS} library implemented in R software, version 3.3.1 (R Core
+\textsf{MASS} library implemented in R software, version 3.3.1 (R Core
 Team, 2016). We used the second order Akaike’s information criterion
 corrected for small sample size \citep[AICc,][]{burnham_model_1998} and
 Akaike weights ($w$) to select the model with the most support among
 the set of five candidate models constructed a priori. All generalized
 additive mixed models were fitted using the \textsf{gamm} function in the
 \textsf{mgcv} library \cite{wood_generalized_2006} in \textbf{\textsf{R}}
-software.\todo{penses-tu qu'il soit nécessaire d'expliquer que nous
-  avons augmenter le lissage}  Finally, because the inclusion of
+software.\nico{penses-tu qu'il soit nécessaire d'expliquer que nous
+  avons augmenter le lissage}\kris{Je pense que oui, en plus j'ai l'impression que c'est pas bien connu cette histoire...}  Finally, because the inclusion of
 non-sedentary animals might influence our results we eliminated all individuals that were not classified as sedentary following the approach described in
 \cite{cagnacci_partial_2011} and then replicated the analyses to evaluate the
 robustness of our results.
@@ -372,7 +388,7 @@ all two-way interactions) in the most complex model. Due to missing
 data for the hierarchical clustering of some individuals, sample size
 for this analysis (individuals with at least 75\% of the scheduled
 locations) was 52 and 168 individuals for BAV and AUR,
-respectively.\todo{On n'a pas le même nombre d'individus à l'issu du
+respectively.\nico{On n'a pas le même nombre d'individus à l'issu du
   clustering} To identify the best supported model, we again used the
 second order Akaike’s information criterion corrected for small sample
 size.
