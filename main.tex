@@ -33,13 +33,12 @@
   \ldots\\ \& Hewison A.J. Mark}
   
 
-\affiliations{Christophe Bonenfant, Vincent Miele and Jean-Michel
-  Gaillard, Université de Lyon, Université Lyon 1, CNRS, UMR5558,
+\affiliations{Nicolas Morellet and A.J. Mark Hewison, CEFS, Université de
+Toulouse, INRA, Castanet-Tolosan, France - e-mail addresses: Nicolas.Morellet@inra.fr (Nicolas Morellet); Mark.Hewison@inra.fr (A.J. Mark Hewison) -- Christophe Bonenfant and Vincent Miele, Université de Lyon, Université Lyon 1, CNRS, UMR5558,
   Laboratoire de Biométrie et Biologie {\'E}volutive, Bâtiment
   G. Mendel, 43 boulevard du 11 novembre 1918, F-69622, Villeurbanne,
   France - e-mail addresses: christophe.bonenfant@univ-lyon1.fr
-  (Christophe Bonenfant); miele.vincent@univ-lyon1.fr (Vincent Miele);
-  jean-michel.gaillard@univ-lyon1.fr (Jean-Michel Gaillard) -- 
+  (Christophe Bonenfant); miele.vincent@univ-lyon1.fr (Vincent Miele) 
 }
 
 \begin{document}
@@ -310,11 +309,11 @@ separately for both the X and Y axes.
 
 \section*{Statistical analyses}
 
-Because it is quite hard to characterize specifically on marked
+Because territoriality and rut of males are quite hard to characterize specifically on marked
 individuals, no behavioural field observations were collected to be
 associated with the observed movement patterns linked to
-territoriality and rut of males. Because mainly adult males should
-engaged into reproduction, we instead attempted to quantify the
+these mating behaviours. We instead relied on the biological fact that mainly adult males should
+engaged into reproduction, and attempted to quantify the
 specificity of male movement and activity patterns with regards to
 territorial and rutting behaviours as follows. As a first step, we
 described the temporal variation in movement and activity variables at
@@ -328,11 +327,11 @@ the same group individuals with similar temporal variation of movement
 and activity variables. Because territorial status was unknown, we
 therefore evaluated the composition of these groups in terms of sex
 and age classes since only males are expected to be territorial and
-mostly adults. We assumed that a high proportion of individuals of the
-same sex belong to the same group would be a sign of good discriminant
-power and ability to infer a male's mating behaviour from movement and
-activity. Below we detail the analyses at the population and individual
-levels.
+mostly adults. Our approach assumed that a high proportion of individuals of the
+same sex belonging to the same group would be a sign of good discriminant
+power and ability to infer one male's mating behaviour from movement and
+activity. Below we detail the analyses we performed at the population and individual
+levels. \krisin{Tu en penses quoi Nico? Ça te paraît clair comme chapeau général à la méthodo? A voir si les autres ont fait la même chose, ce qui ne me surprendrait pas pour les naissances par exemple.}\nico{oui c'est plus explicite que ce que j'avais écrit et notamment cela présente bien la démarche}
 
 \subsection*{At the population level}
 To detect territorial and/or rutting behaviour, we compared the
@@ -382,11 +381,7 @@ the model with the most support among the set of five candidate models
 constructed a priori. All generalized additive mixed models were
 fitted using the \textsf{gamm} function in the \textsf{mgcv} library
 \cite{wood_generalized_2006} in \textbf{\textsf{R}} software version
-3.3.1 (R Core Team, 2016).\nico{penses-tu qu'il soit nécessaire
-  d'expliquer que nous avons augmenter le lissage}\kris{Je pense que
-  oui, en plus j'ai l'impression que c'est pas bien connu cette
-  histoire...}  Finally, because the inclusion of non-sedentary
-animals might influence our results we eliminated all individuals that
+3.3.1 (R Core Team, 2016). As recommended, we checked the number of knots used in the penalized regression model, by increasing the number of knots (parameter k in a spline) when the effective degree of freedom was too close to the value of k, or by decreasing the number of knots when the effective degree of freedom was really lower than the number of knots (Wood 2017). Finally, because the inclusion of non-sedentary animals might influence our results we eliminated all individuals that
 were not classified as sedentary following the approach described in
 \cite{cagnacci_partial_2011} and then replicated the analyses to
 evaluate the robustness of our results.
@@ -420,7 +415,7 @@ of similar metrics.\krisin{Je me demande ici si ce n'est pas embêtant
   regarder vite fait? A tout le moins, comment justifier ces choix
   autrement que par le fait que les GAMM ne proposent pas de wavelet
   et dans ce cas, pourquoi ne pas avoir utilisé les GAMM ici pour la
-  méthode de classification.}
+  méthode de classification.}\nico{Comme tu l'expliques bien dans le chapeau, il y a l'approche au niveau populationnel et celle au niveau individuel. L'approche au niveau pop est descriptive, au niveau individuel on a besoin de quelque chose de plus efficace - ceci étant, il faudrait peut-être avoir cette discussion avec Vincent. Tu peux peut-être lui poser la question en directe. Sinon, je peux le faire.}
 
 The clustering methods returned two groups of individuals (see
 Results), that we analyzed as binary response variable. We performed
