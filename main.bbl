@@ -1,4 +1,4 @@
-\begin{thebibliography}{37}
+\begin{thebibliography}{38}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -242,6 +242,10 @@ Walsh, P.B., Sethi, S.A., Lake, B.C., Mangipane, B.A., Nielson, R. \& Lowe, S.
 \bibitem[{Wood(2006)}]{wood_generalized_2006}
 Wood, S. 2006: Generalized {Additive} {Models}: {An} {Introduction} with {R}.
   -- Chapman and Hall/CRC Press, Boca Raton, Florida.
+
+\bibitem[{Wood(2017)}]{Wood2017}
+Wood, S. 2017: Generalized Additive Models: An Introduction with R.  -- Chapman
+  and Hall/CRC, 2 edition.
 
 \bibitem[{Wronski(2005)}]{wronski_home-range_2005}
 Wronski, T. 2005: Home-range overlap and spatial organization as indicators for

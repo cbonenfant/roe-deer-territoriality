@@ -309,29 +309,30 @@ separately for both the X and Y axes.
 
 \section*{Statistical analyses}
 
-Because territoriality and rut of males are quite hard to characterize specifically on marked
-individuals, no behavioural field observations were collected to be
-associated with the observed movement patterns linked to
-these mating behaviours. We instead relied on the biological fact that mainly adult males should
-engaged into reproduction, and attempted to quantify the
-specificity of male movement and activity patterns with regards to
-territorial and rutting behaviours as follows. As a first step, we
-described the temporal variation in movement and activity variables at
-the population level, and tested for age and sex effects. This served
-as an \textit{a priori} analyses of the metrics, testing for the
-differences between an average male and female of varying ages. At
-this stage, we searched for some particular patterns that would show
-up in adult males only. As a second step, we ran an uninformed
-classification procedure aiming at pooling \textit{a posteriori} in
-the same group individuals with similar temporal variation of movement
-and activity variables. Because territorial status was unknown, we
-therefore evaluated the composition of these groups in terms of sex
-and age classes since only males are expected to be territorial and
-mostly adults. Our approach assumed that a high proportion of individuals of the
-same sex belonging to the same group would be a sign of good discriminant
-power and ability to infer one male's mating behaviour from movement and
-activity. Below we detail the analyses we performed at the population and individual
-levels. \krisin{Tu en penses quoi Nico? Ça te paraît clair comme chapeau général à la méthodo? A voir si les autres ont fait la même chose, ce qui ne me surprendrait pas pour les naissances par exemple.}\nico{oui c'est plus explicite que ce que j'avais écrit et notamment cela présente bien la démarche}
+Because territoriality and rut of males are quite hard to characterize
+specifically on marked individuals, no behavioural field observations
+were collected to be associated with the observed movement patterns
+linked to these mating behaviours. We instead relied on the biological
+fact that mainly adult males should engaged into reproduction, and
+attempted to quantify the specificity of male movement and activity
+patterns with regards to territorial and rutting behaviours as
+follows. As a first step, we described the temporal variation in
+movement and activity variables at the population level, and tested
+for age and sex effects. This served as an \textit{a priori} analyses
+of the metrics, testing for the differences between an average male
+and female of varying ages. At this stage, we searched for some
+particular patterns that would show up in adult males only. As a
+second step, we ran an uninformed classification procedure aiming at
+pooling \textit{a posteriori} in the same group individuals with
+similar temporal variation of movement and activity variables. Because
+territorial status was unknown, we therefore evaluated the composition
+of these groups in terms of sex and age classes since only males are
+expected to be territorial and mostly adults. Our approach assumed
+that a high proportion of individuals of the same sex belonging to the
+same group would be a sign of good discriminant power and ability to
+infer one male's mating behaviour from movement and activity. Below we
+detail the analyses we performed at the population and individual
+levels.
 
 \subsection*{At the population level}
 To detect territorial and/or rutting behaviour, we compared the
@@ -381,8 +382,14 @@ the model with the most support among the set of five candidate models
 constructed a priori. All generalized additive mixed models were
 fitted using the \textsf{gamm} function in the \textsf{mgcv} library
 \cite{wood_generalized_2006} in \textbf{\textsf{R}} software version
-3.3.1 (R Core Team, 2016). As recommended, we checked the number of knots used in the penalized regression model, by increasing the number of knots (parameter k in a spline) when the effective degree of freedom was too close to the value of k, or by decreasing the number of knots when the effective degree of freedom was really lower than the number of knots (Wood 2017). Finally, because the inclusion of non-sedentary animals might influence our results we eliminated all individuals that
-were not classified as sedentary following the approach described in
+3.3.1 (R Core Team, 2016). As recommended by \cite{Wood2017}, we
+selected the number of knots ($k$) of the penalized regression model
+by comparing $k$ and the effective number of degrees of freedom
+(\textit{edf}). As long as \textit{edf} was too close to $k$, we
+sequentially increased the number of knots \citep{Wood2017}. Finally,
+because the inclusion of non-sedentary animals might influence our
+results we eliminated all individuals that were not classified as
+sedentary following the approach described in
 \cite{cagnacci_partial_2011} and then replicated the analyses to
 evaluate the robustness of our results.
 
@@ -415,7 +422,13 @@ of similar metrics.\krisin{Je me demande ici si ce n'est pas embêtant
   regarder vite fait? A tout le moins, comment justifier ces choix
   autrement que par le fait que les GAMM ne proposent pas de wavelet
   et dans ce cas, pourquoi ne pas avoir utilisé les GAMM ici pour la
-  méthode de classification.}\nico{Comme tu l'expliques bien dans le chapeau, il y a l'approche au niveau populationnel et celle au niveau individuel. L'approche au niveau pop est descriptive, au niveau individuel on a besoin de quelque chose de plus efficace - ceci étant, il faudrait peut-être avoir cette discussion avec Vincent. Tu peux peut-être lui poser la question en directe. Sinon, je peux le faire.}
+  méthode de classification.}\nico{Comme tu l'expliques bien dans le
+  chapeau, il y a l'approche au niveau populationnel et celle au
+  niveau individuel. L'approche au niveau pop est descriptive, au
+  niveau individuel on a besoin de quelque chose de plus efficace -
+  ceci étant, il faudrait peut-être avoir cette discussion avec
+  Vincent. Tu peux peut-être lui poser la question en directe. Sinon,
+  je peux le faire.}
 
 The clustering methods returned two groups of individuals (see
 Results), that we analyzed as binary response variable. We performed
@@ -431,32 +444,35 @@ missing data for the hierarchical clustering of some individuals with
 at least 75\% of the scheduled locations, sample size for this
 analysis was 52 and 168 individuals for BAV and AUR,
 respectively.\nico{On n'a pas le même nombre d'individus à l'issu du
-  clustering} We performed our model selection with the second order
-Akaike’s information criterion corrected for small sample size. We
-used the \textit{dredge} function in the \textit{MuMIn} library to
-generate all sets of models \citep{barton_mumin:_2016}.
+  clustering}\kris{Oui mais du coup on fait quoi ? Je ne sais pas trop
+  d'où ça vient. C'est Vincent qui a éliminé certains individus?} We
+performed our model selection with the second order Akaike’s
+information criterion corrected for small sample size. We used the
+\textit{dredge} function in the \textit{MuMIn} library to generate all
+sets of models \citep{barton_mumin:_2016}.
 
 \section*{Results}
 \subsection*{At the population level}
 
-Our overall results were robust with respect to sedentary
-status. Indeed, whether we restricted the analysis to sedentary
-individuals only, or analysed all available individuals, the results
-were comparable (see Electronic Appendix S1). Thus, here we present
-results based on the whole data set.
+Overall our results were robust with respect to sedentary status of
+roe deer. Indeed, whether we restricted the analysis to sedentary
+individuals only or analyzed all available individuals, the results
+were comparable (see Electronic Appendix S1). Thus, we here present
+results based on the whole data set to provide a more general picture.
 
 Residence time (RT250), movement speed (speed), mean head movements on
 the X axis (meanX) and on the Y axis (meanY) all showed strong
 temporal variation that differed in amplitude, timing and general
 pattern among sexes, age classes and study sites (AICc weight = 1,
-Table 1). In males, except for residence time, the temporal variation
-of the different metrics followed a comparable pattern
-(Fig. 2). However, the temporal variation of the four metrics differed
-markedly between adult males and females (Fig. 2). Residence time of
-females showed a pronounced peak shortly after the birth period,
-whereas it was more or less constant for males. These temporal
-fluctuations were generally more pronounced for adults compared to
-yearlings and sub-adults (Fig. 3).
+Table~\ref{tab:population}). In males, except for residence time, the
+temporal variation of the different metrics followed a comparable
+pattern (Fig.~\ref{fig:sex}). However, the temporal variation of the
+four metrics differed markedly between adult males and females
+(Fig.~\ref{fig:age}). Residence time of females showed a pronounced
+peak shortly after the birth period, whereas it was more or less
+constant for males. These temporal fluctuations were generally more
+pronounced for adults compared to yearlings and sub-adults
+(Fig.~\ref{}).
 
 For females, movement speed followed an inverted bell curve, and was
 highest during winter and lowest near the summer solstice. However,
@@ -467,6 +483,12 @@ axes) followed a bimodal distribution, with one peak in spring (around
 the 20th of April and 1st of May for AUR and BAV, respectively) and
 another peak in summer (around the 1st of August and 25th of July for
 AUR and BAV, respectively).
+
+\krisin{Je pense qu'il faudrait davantage préciser les dates de pics
+  et minima que l'on peut visualier sur les GAMs. Apparemment il y a
+  une fonction qui fait ça dans GAM, on pourrait essayer. C'est bien
+  de dire que le pic tombe dans la période attendue, mais encore mieux
+  de pouvoir dire à quelle date exacte se situe le pic dans l'année.}
 
 \subsection*{At the individual level}
 From the hierarchical clustering performed separately for each study
@@ -483,8 +505,9 @@ most likely to be engaged in territorial behaviour. In the analysis of
 the sex-, study site- and age- dependence of this behaviour, the best
 model describing the probability of having two activity peaks
 contained only the two-way interaction between age and sex (AICc
-weight = 0.25, Table 2, Fig. 4). The probability of having two
-activity peaks was much lower for adult females (0.016$\pm$0.016) than for
+weight = 0.25, Table \ref{tab:probability},
+Fig.~\ref{fig:probability}). The probability of having two activity
+peaks was much lower for adult females (0.016$\pm$0.016) than for
 adult males (0.852$\pm$0.048).
 
 \section*{Discussion}
@@ -508,7 +531,7 @@ adult males (0.852$\pm$0.048).
     Akaike weights ($w$), is reported in bold. All models including a
     two-way interaction also include main effects. AICc is the value
     of the corrected Akaike’s information criterion and df is the
-    number of degree of freedom for each model.}
+    number of degree of freedom for each model.}\label{tab:population}
   
     \begin{tabular}{rrrrrr}
       \\
@@ -540,7 +563,6 @@ adult males (0.852$\pm$0.048).
             & \textbf{S(time by sex, age, study} & \textbf{433.5} & \textbf{1106591.4} & \textbf{0} & \textbf{1} \\
       \hline 
     \end{tabular}
-  \label{tab:addlabel}
   \end{table}
  
 \begin{table}[t]
@@ -559,6 +581,7 @@ adult males (0.852$\pm$0.048).
     criterion and df is the number of degree of freedom for each
     model. The ranking of the models is based on the differences in
     the values for $\Delta$AICc and Akaike weights ($w$).}
+  \label{tab:probability}
   
     \begin{tabular}{rrrrr}
     \\
@@ -573,7 +596,6 @@ adult males (0.852$\pm$0.048).
     Null  & 1     & 293.6 & 121.48 & 0 \\
     \hline
     \end{tabular}
-  \label{tab:addlabel}
 \end{table}
 
 \newpage
@@ -597,7 +619,7 @@ adult males (0.852$\pm$0.048).
     represent the temporal window for the observed peaks in these
     metrics in spring (20th of April and 1st of May for F:43° N and
     D:49° N, respectively) and summer (1st of August and 25th of July
-    for F:43° N and D:49° N, respectively).}
+    for F:43° N and D:49° N, respectively).}\label{fig:sex}
 \end{figure}
 
 \newpage
@@ -619,7 +641,7 @@ adult males (0.852$\pm$0.048).
     temporal window for the observed peaks in these metrics in spring
     (20th of April and 1st of May for F:43° N and D:49° N,
     respectively) and summer (1st of August and 25th of July for F:43°
-    N and D:49° N, respectively).}
+    N and D:49° N, respectively).}\label{fig:age}
 \end{figure}
 
 \begin{figure} [!h]
@@ -629,7 +651,8 @@ adult males (0.852$\pm$0.048).
     relation to the sex and the age class, for roe deer monitored in
     two study sites (AUR in France and BAV in Germany), from 2002 to
     2013 in AUR and from 2004 and 2015 in BAV. The dots (and segment
-    lines) represent the GLM models (with the confidence intervals).}
+    lines) represent the GLM models (with the confidence
+    intervals).}\label{fig:probability}
 \end{figure}
 
 \end{document}
