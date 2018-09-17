@@ -157,7 +157,7 @@ of sexual dimorphism, patterns of spatial behaviour differ markedly
 between the sexes, as males only are seasonally territorial, while
 females do not actively defend their home range \citep[but
 see][]{maublanc_ranging_2012}. Territoriality patrolling (Cumming
-1966), changes in home range size and scent marking
+1966), changes in HR size and scent marking
 \citep{gosling_reassessment_1982}. During the rut roe deer males
 actively search for females, rub antlers or chase and fight with
 competitors generating an increase in the overall activity of animals.
@@ -221,11 +221,12 @@ September to February. \todo{C'est peut-être ça qui rend les relation
 The second study site is located in Germany and Czech republic (N
 49°01', E 13°40', 3070 km², hereafter BAV), putting together two
 adjacent national parks, the Bavarian Forest National Park (240
-km$^2$) and the Šumava National Park (640 km$^2$) respectively. The landscape is typical of central European sub-mountainous
+km$^2$) and the Šumava National Park (640 km$^2$) respectively
+(D:49°N). The landscape is typical of central European sub-mountainous
 forest,... \todo{to be completed by Marco} Elevation varies
 substantially between 600 and 1450 m a.s.l. and the site consists
 essentially of forests of Norway spruce \species{picea abies L.}. The
-climate is continental, with an average annual temperature ranginf
+climate is continental, with an average annual temperature ranging
 between 3°C and 6.5°C depending on the elevation, and an average
 annual precipitation of between 830 and 2230 mm. The roe deer is
 hunted...\todo{to be completed by Marco}
@@ -265,8 +266,10 @@ with a fix interval of approximately 6 hours). We considered six
 months of monitoring as the minimum to obtain a representative
 estimate of ranging behaviour over the spring-summer period and we
 kept only those individuals with at least 75\% (or 90\%) of the
-scheduled locations (average of 3.6 and 3.8 locations per day for 75\% and 90\% of scheduled locations respectively). The final sample of data, corresponding to different individuals or different age-classes, varied among metrics (see below) and study sites (Table \ref{tab:effectifs}).
-\nicoin{Christophe, j'ai viré l'individu qui avait peu de données et qui était retiré par Vincent. Du coup, nous avons la même taille d'échantillon pour l'activité en X qui est le PPDC. J'ai refait la sélection de modèles et les graphes, comme cela c'est cohérent entre approches.}
+scheduled locations. The final sample comprised 72 and 190 individual
+age classes at BAV and AUR, repectively (or 43 and 95) (average of 3.6
+and 3.8 locations per day for 75\% and 90\% of scheduled locations
+respectively).
 
 In order to identify temporal changes in behaviour, we generated four
 metrics of movement and activity expected to index a territorial
@@ -302,7 +305,11 @@ we aggregated the activity information across a six hour window
 centred on each theoretical GPS location (\textit{i.e.} at 00:00,
 06:00, 12:00 and 18:00). For example, for a location obtained at
 06:00, we averaged activity data measured from 03:00 to 09:00
-separately for both the X and Y axes. Due to missing activity data for some individuals, the sample size differed among metrics (\ref{tab:effectifs}).
+separately for both the X and Y axes. Due to missing activity data for
+some individuals, the sample for head movements on the X axis and on
+the Y axis comprised 52 and 168 individual age classes at BAV and AUR
+respectively for 75\% of scheduled locations (or 35 and 85 for 90\% of
+scheduled locations).
 
 \section*{Statistical analyses}
 
@@ -315,15 +322,15 @@ attempted to quantify the specificity of male movement and activity
 patterns with regards to territorial and rutting behaviours as
 follows. As a first step, we described the temporal variation in
 movement and activity variables at the population level, and tested
-for age and sex effects. This served as an \textit{a priori} analysis
+for age and sex effects. This served as an \textit{a priori} analyses
 of the metrics, testing for the differences between an average male
-and female of varying age-classes. At this stage, we searched for some
+and female of varying ages. At this stage, we searched for some
 particular patterns that would show up in adult males only. As a
 second step, we ran an uninformed classification procedure aiming at
 pooling \textit{a posteriori} in the same group individuals with
 similar temporal variation of movement and activity variables. Because
 territorial status was unknown, we therefore evaluated the composition
-of these groups in terms of sex and age-classes since only males are
+of these groups in terms of sex and age classes since only males are
 expected to be territorial and mostly adults. Our approach assumed
 that a high proportion of individuals of the same sex belonging to the
 same group would be a sign of good discriminant power and ability to
@@ -333,7 +340,7 @@ levels.
 
 \subsection*{At the population level}
 To detect territorial and/or rutting behaviour, we compared the
-movement and activity metrics of male and female yearlings, sub-adults
+movement and activity metrics of male and female juveniles, yearlings
 and adults. Indeed, a priori, we expected to observe signals of
 territorial behaviour in males but not females, and mostly in
 prime-age males, rather than sub-adults or yearlings For the analysis,
@@ -368,7 +375,7 @@ age-specific temporal effect, a model including a sex-specific and a
 site-specific temporal effect, and a model including a sex-specific,
 age-specific and site-specific temporal effect. We systematically
 included sex in all models other than the baseline model as there was
-a strong \textit{a priori} reason to expect the temporal pattern should differ
+a strong a priori reason to expect the temporal pattern should differ
 between sexes (see above). In order to improve the quality of the fit
 of GAMM models and then to reduce the structure of residuals, we used
 the Box-Cox power transformation of the four variables using the
@@ -377,7 +384,7 @@ Akaike’s information criterion corrected for small sample size
 \citep[AICc,][]{burnham_model_1998} and Akaike weights ($w$) to select
 the model with the most support among the set of five candidate models
 constructed a priori. All generalized additive mixed models were
-fitted using the \textsf{gam} function in the \textsf{mgcv} library
+fitted using the \textsf{gamm} function in the \textsf{mgcv} library
 \cite{wood_generalized_2006} in \textbf{\textsf{R}} software version
 3.3.1 (R Core Team, 2016). As recommended by \cite{Wood2017}, we
 selected the number of knots ($k$) of the penalized regression model
@@ -419,7 +426,7 @@ of similar metrics.\krisin{Je me demande ici si ce n'est pas embêtant
   regarder vite fait? A tout le moins, comment justifier ces choix
   autrement que par le fait que les GAMM ne proposent pas de wavelet
   et dans ce cas, pourquoi ne pas avoir utilisé les GAMM ici pour la
-  méthode de classification.}\nicoin{Comme tu l'expliques bien dans le
+  méthode de classification.}\nico{Comme tu l'expliques bien dans le
   chapeau, il y a l'approche au niveau populationnel et celle au
   niveau individuel. L'approche au niveau pop est descriptive, au
   niveau individuel on a besoin de quelque chose de plus efficace -
@@ -427,17 +434,23 @@ of similar metrics.\krisin{Je me demande ici si ce n'est pas embêtant
   Vincent. Tu peux peut-être lui poser la question en directe. Sinon,
   je peux le faire.}
 
-We analyzed these two groups of individuals (see Results) as a binary response variable. We performed generalized linear models with a logit link function to analyse the
+The clustering methods returned two groups of individuals (see
+Results), that we analyzed as binary response variable. We performed
+generalized linear models with a logit link function to analyse the
 probability of an individual to belong to group 1 in relation to sex
 (male \textit{vs.} female), study site (AUR \textit{vs.} BAV) and age
 class (yearlings, sub-adults and adults). As we expected to observe
 the territorial behaviour mostly on adult roe deer and in order to
 make sure we obtained the same results over the two sites, we included
-also the three-way interaction between sex, site and age class
-(and all two-way interactions) in the most complex model. To perform this unsupervised clustering method, we used a sample size of 220 data (individuals x age-classes, Table \ref{tab:effectifs}), with at least 75\% of the scheduled locations and the three temporal metrics (speed, meanX and meanY). We performed our model selection with the second order Akaike’s
-information criterion corrected for small sample size. We used the
-\textit{dredge} function in the \textit{MuMIn} library to generate all
-sets of models \citep{barton_mumin:_2016}.
+also the three-way interactions between these sex, site and age class
+(and all two-way interactions) in the most complex model. To perform
+this unsupervised clustering method, we retained the 52 and 168
+individuals age classes for BAV and AUR, respectively, with at least
+75\% of the scheduled locations and the three temporal metrics (speed,
+meanX and meanY). We performed our model selection with the second
+order Akaike’s information criterion corrected for small sample
+size. We used the \textit{dredge} function in the \textit{MuMIn}
+library to generate all sets of models \citep{barton_mumin:_2016}.
 
 \section*{Results}
 \subsection*{At the population level}
@@ -451,24 +464,31 @@ results based on the whole data set to provide a more general picture.
 Residence time (RT250), movement speed (speed), mean head movements on
 the X axis (meanX) and on the Y axis (meanY) all showed strong
 temporal variation that differed in amplitude, timing and general
-pattern among sexes, age-classes and study sites (AICc weight = 1,
+pattern among sexes, age classes and study sites (AICc weight = 1,
 Table~\ref{tab:population}). In males, except for residence time, the
 temporal variation of the different metrics followed a comparable
 pattern (Fig.~\ref{fig:sex}). However, the temporal variation of the
 four metrics differed markedly between adult males and females
 (Fig.~\ref{fig:age}). Residence time of females showed a pronounced
-peak around the birth period, whereas it was more or less
-constant for males. The temporal fluctuations were generally consistent
-among the different age-classes (Fig.~\ref{fig:age}).
+peak around the birth period, whereas it was more or less constant for
+males. The temporal fluctuations were generally consistent among the
+different age-classes (Fig.~\ref{fig:age}).
 
 For females, movement speed followed an inverted bell curve, and was
 highest during winter and lowest near the summer solstice. However,
 the temporal variations in actvity (head movements on the X and Y
 axes) were not very consistent between the two study sites. In
 contrast, for males, both movement speed and head movements (X and Y
-axes) followed a bimodal distribution, with one peak in spring (between the 3rd and
-12th of April for AUR and the 16th of May for BAV, Table \ref{tab:peaks}) and
-another peak in summer (between the 29th of July and 13th of August for AUR between the 16th and 30th of July for BAV, Table \ref{tab:peaks}). Finally, there was a better consistency between head movements (X and Y axes) and between study sites (with one peak in spring between the 11th and 12th of April for AUR and the 16th of May for BAV, and another peak in summer the 29th of July for AUR and between the 29th and 30th of July for BAV, Table \ref{tab:peaks})\krisin{OK Merci Nico. Je commence un draft de discussion ce vendredi !}
+axes) followed a bimodal distribution, with one peak in spring
+(between the 3rd and 12th of April for AUR and the 16th of May for
+BAV, Table \ref{tab:peaks}) and another peak in summer (between the
+29th of July and 13th of August for AUR between the 16th and 30th of
+July for BAV, Table \ref{tab:peaks}). Finally, there was a better
+consistency between head movements on the X and Y axes and between
+study sites (with one peak in spring between the 11th and 12th of
+April for AUR and the 16th of May for BAV, and another peak in summer
+the 29th of July for AUR and between the 29th and 30th of July for
+BAV, Table \ref{tab:peaks}).
 
 \subsection*{At the individual level}
 From the hierarchical clustering performed separately for each study
@@ -479,7 +499,7 @@ included all individuals that had two temporal peaks for movement
 speed and head movements (cluster 2), the other cluster contained
 individuals that showed an inverted bell curve in movement speed (with
 a higher speed during winter than during summer) and only one temporal
-peak for head movements (see Electronic Appendix S2). In the next step, we thus
+peak (see Electronic Appendix S2). In the next step, we thus
 considered individuals with two pronounced activity peaks as those
 most likely to be engaged in territorial behaviour. In the analysis of
 the sex-, study site- and age- dependence of this behaviour, the best
@@ -492,28 +512,35 @@ adult males (0.852$\pm$0.048).
 
 \section*{Discussion}
 
+Males and females of the same species often display contrasting mating
+related behaviours (Lott 1984, Clutton-Brock et al. 1982). Even if the
+roe deer is oligomorphic and present a small sexual size dimorphism
+only (ref), adult males show an unusually long period of
+mating-related behaviour for a large herbivore. Male roe deer start
+with territoriality in early March to the end of rut by late August
+(ref). By this time, females give birth around June, raise there fawns
+for the next 6 months, while mating takes place in August. The marked
+between-sex differences in the timing of the different events of
+reproduction is clearly visible in the movement and activity variables
+we explored (see Fig.~\ref{fig:sex}). From the seasonal patterns of
+speed and levels of activity, the timing of parturition is evidenced
+by a decrease in activity and a restricted range of female roe deer as
+previously reported for reindeer (ref) or white-tailed deer
+(ref). Moreover two peaks of activity and speed, associated to a
+reduced range, characterize male seasonal patterns, matching with the
+expected timing of territoriality and mating of roe deer (ref). Given
+the high age- and sex-specificity of this double peak
+(Table~\ref{tab:peaks}), we suggest that territoriality and rut of
+male roe deer can be assessed indirectly from activity and movement at
+the population and individual levels.
+
+Reproduction has strong effect on animals, driving movement and
+activity patterns.
+
+
 \bibliography{nico,/home/christophe/Documents/bibtex/Kris_2006}
 
 \newpage
-\begin{table}[htbp]
-  \centering
-  \caption{Sample size of roe deer (individual x age-classes) with at least 75\% / 90\% of scheduled locations used for the generalized additive mixed models for residence time in a radius of 250 m (RT250), movement speed (speed), mean head movements on the X axis (meanX)
-    and the Y axis (meanY) and for the clustering method, in the two study sites (AUR in France and BAV in Germany), from 2002 to 2013 in AUR and from 2004 and 2015 in BAV. }  \label{tab:effectifs}
-    \begin{tabular}{lcc}
-    \\
-    \hline
-          & AUR   & BAV \\
-    \hline
-    RT250 & 190 / 95 & 72 / 43 \\
-    Speed & 190 / 95 & 72 / 43 \\
-    MeanX & 168 / 85 & 52 / 35 \\
-    MeanY & 174 / 88 & 52 / 35 \\
-    Clustering & 168   & 52 \\
-    \hline
-    \end{tabular}
-\end{table}
-
-
 \begin{table}[htbp]
   \centering
   \caption{Performance of the five candidate generalized additive
@@ -521,8 +548,8 @@ adult males (0.852$\pm$0.048).
     movement speed (speed), mean head movements on the X axis (meanX)
     and the Y axis (meanY), including a smoothed effect of time
     (Julian date) based on a cyclic P-spline, which differed between
-    sexes, between sexes and age-classes, between sexes and study
-    sites, and between sexes, age-classes and study sites, for
+    sexes, between sexes and age classes, between sexes and study
+    sites, and between sexes, age classes and study sites, for
     individual roe deer with at least 75\% of scheduled locations in
     the two study sites (AUR in France and BAV in Germany), from 2002
     to 2013 in AUR and from 2004 and 2015 in BAV. The most supported
@@ -537,60 +564,32 @@ adult males (0.852$\pm$0.048).
       \hline  
       Proxy & Models & df    & AICc  & $\Delta$AICc & $w$ \\
       \hline
-    RT250 & S(time) & 266.6 & -703224.5 & 31710.8 & <0.001 \\
-          & S(time by sex) & 285.0 & -720677.4 & 14257.9 & <0.001 \\
-          & S(time by sex, age) & 355.9 & -724606.7 & 10328.6 & <0.001 \\
-          & S(time by sex, study) & 321.5 & -728284.1 & 6651.2 & <0.001 \\
-          & \textbf{S(time by sex, age, study)} & \textbf{461.4} & \textbf{-734935.3} & \textbf{0}     & \textbf{1} \\   
+      RT250 & S(time) & 266.6 & -703224.5 & 31710.8 & <0.001 \\
+            & S(time by sex) & 285   & -720677.4 & 14257.9 & <0.001 \\
+            & S(time by sex, age) & 355.9 & -724606.7 & 10328.6 & <0.001 \\
+            & S(time by sex, study & 321.5 & -728284.1 & 6651.2 & <0.001 \\
+            & \textbf{S(time by sex, age, study} & \textbf{461.4} & \textbf{-734935.3} & \textbf{0} & \textbf{1} \\        
       \hline
       Speed & S(time) & 262.4 & 335783.2 & 8361.3 & <0.001 \\
-          & S(time by sex) & 278.2 & 331056.5 & 3634.6 & <0.001 \\
-          & S(time by sex, age) & 339.7 & 329990.8 & 2568.9 & <0.001 \\
-          & S(time by sex, study) & 314.6 & 328918.7 & 1496.9 & <0.001 \\
-          & \textbf{S(time by sex, age, study)} & \textbf{432.7} & \textbf{327421.8} & \textbf{0}     & \textbf{1} \\
+            & S(time by sex) & 278.2 & 331056.5 & 3634.6 & <0.001 \\
+            & S(time by sex, age) & 339.7 & 329990.8 & 2568.9 & <0.001 \\
+            & S(time by sex, study & 314.6 & 328918.7 & 1496.9 & <0.001 \\
+            & \textbf{S(time by sex, age, study} & \textbf{432.7} & \textbf{327421.8} & \textbf{0} & \textbf{1} \\
       \hline
-      MeanX & S(time) & 232.8 & 969195.1 & 26151.3 & <0.001 \\
-          & S(time by sex) & 251.5 & 962980.3 & 19936.5 & <0.001 \\
-          & S(time by sex, age) & 324.6 & 959415 & 16371.2 & <0.001 \\
-          & S(time by sex, study) & 288.8 & 948340.7 & 5296.9 & <0.001 \\
-          & \textbf{S(time by sex, age, study)} & \textbf{434.4} & \textbf{943043.8} & \textbf{0}     & \textbf{1} \\     
+      MeanX & S(time) & 237.8 & 1001934.3 & 24639.5 & <0.001 \\
+            & S(time by sex) & 256.5 & 996264.1 & 18969.3 & <0.001 \\
+            & S(time by sex, age) & 329.3 & 993102.3 & 15807.5 & <0.001 \\
+            & S(time by sex, study & 293.7 & 981784.4 & 4489.6 & <0.001 \\
+            & \textbf{S(time by sex, age, study} & \textbf{438.2} & \textbf{977294.8} & \textbf{0} & \textbf{1} \\       
       \hline
-      MeanY & S(time) & 236.6 & 1125248.5 & 19227.6 & <0.001 \\
-          & S(time by sex) & 255.3 & 1121066.5 & 15045.6 & <0.001 \\
-          & S(time by sex, age) & 326.4 & 1118998.5 & 12977.7 & <0.001 \\
-          & S(time by sex, study) & 292.7 & 1109187.7 & 3166.9 & <0.001 \\
-          & \textbf{S(time by sex, age, study)} & \textbf{432.5} & \textbf{1106020.8} & \textbf{0}     & \textbf{1} \\
+      MeanY & S(time) & 237.6 & 1125826.3 & 19234.9 & <0.001 \\
+            & S(time by sex) & 256.3 & 1121643.1 & 15051.7 & <0.001 \\
+            & S(time by sex, age) & 327.4 & 1119574.2 & 12982.8 & <0.001 \\
+            & S(time by sex, study & 293.7 & 1109759.4 & 3168  & <0.001 \\
+            & \textbf{S(time by sex, age, study} & \textbf{433.5} & \textbf{1106591.4} & \textbf{0} & \textbf{1} \\
       \hline 
     \end{tabular}
   \end{table}
-
-
-\begin{table}[t]
-  \centering
-  \caption{Julian date of the maximum (and confidence intervals obtained from boostrapping from the posterior distribution of the peak location) observed during the first and the second half-year of the generalized additive
-    mixed models for residence time in a radius of 250 m (RT250),
-    movement speed (speed), mean head movements on the X axis (meanX)
-    and the Y axis (meanY), including a smoothed effect of time
-    (Julian date) based on a cyclic P-spline, which differed between sexes, age-classes and study sites, for individual roe deer with at least 75\% of scheduled locations in the two study sites (AUR in France and BAV in Germany), from 2002
-    to 2013 in AUR and from 2004 and 2015 in BAV.}    \label{tab:peaks}
-    
-    \begin{tabular}{cccccccc}
-    \\
-    \hline
-          &       & \multicolumn{3}{c}{First half-year} & \multicolumn{3}{c}{Secon half-year} \\
-    \hline
-          &       & 2.50\% & Peak  & 97.50\% & 2.50\% & Peak  & 97.50\% \\
-    RT250 & AUR   & 13 - May & 20 - Jun & 21 - Jun & 26 - Jul & 26 - Jul & 27 - Jul \\
-          & BAV   & 13 - Feb & 14 - Feb & 15 - Feb & 13 - Sep & 18 - Sep & 20 - Dec \\
-    Speed & AUR   & 25 - Mar & 03 - Apr & 13 - Apr & 11 - Aug & 13 - Aug & 14 - Aug       \\
-          & BAV   & 03 - May & 16 - May & 23 - May & 10 - Jul & 12 - Jul & 16 - Jul \\
-    MeanX & AUR   & 10 - Apr & 12 - Apr & 17 - Apr & 28 - Jul & 29 - Jul & 29 - Jul \\
-          & BAV   & 15 - May & 16 - May & 18 - May & 29 - Jul & 29 - Jul & 30 - Jul \\
-    MeanY & AUR   & 10 - Apr & 11 - Apr & 13 - Apr & 29 - Jul & 29 - Jul & 30 - Jul \\
-          & BAV   & 15 - May & 16 - May & 17 - May & 29 - Jul & 30 - Jul & 30 - Jul \\
-    \hline
-    \end{tabular}
-\end{table}
  
 \begin{table}[t]
   \centering
@@ -625,6 +624,35 @@ adult males (0.852$\pm$0.048).
     \end{tabular}
 \end{table}
 
+\begin{table}[t]
+  \centering
+  \caption{Julian date of the maximum (and confidence intervals obtained from boostrapping from the posterior distribution of the peak location) observed during the first and the second half-year of the generalized additive
+    mixed models for residence time in a radius of 250 m (RT250),
+    movement speed (speed), mean head movements on the X axis (meanX)
+    and the Y axis (meanY), including a smoothed effect of time
+    (Julian date) based on a cyclic P-spline, which differed between sexes, age classes and study sites, for individual roe deer with at least 75\% of scheduled locations in the two study sites (AUR in France and BAV in Germany), from 2002
+    to 2013 in AUR and from 2004 and 2015 in BAV.}    \label{tab:peaks}
+    
+    \begin{tabular}{cccccccc}
+    \\
+    \hline
+          &       & \multicolumn{3}{c}{First half-year} & \multicolumn{3}{c}{Secon half-year} \\
+    \hline
+          &       & 2.50\% & Peak  & 97.50\% & 2.50\% & Peak  & 97.50\% \\
+    RT250 & AUR   & 13 - May & 20 - Jun & 21 - Jun & 26 - Jul & 26 - Jul & 27 - Jul \\
+          & BAV   & 13 - Feb & 14 - Feb & 15 - Feb & 13 - Sep & 18 - Sep & 20 - Dec \\
+    Speed & AUR   & 25 - Mar & 03 - Apr & 13 - Apr & 11 - Aug & 13 - Aug & 14 - Aug       \\
+          & BAV   & 03 - May & 16 - May & 23 - May & 10 - Jul & 12 - Jul & 16 - Jul \\
+    MeanX & AUR   & 10 - Apr & 12 - Apr & 18 - Apr & 28 - Jul & 29 - Jul & 29 - Jul \\
+          & BAV   & 15 - May & 16 - May & 18 - May & 29 - Jul & 29 - Jul & 30 - Jul \\
+    MeanY & AUR   & 10 - Apr & 11 - Apr & 13 - Apr & 29 - Jul & 29 - Jul & 30 - Jul \\
+          & BAV   & 15 - May & 16 - May & 17 - May & 29 - Jul & 30 - Jul & 30 - Jul \\
+    \hline
+    \end{tabular}
+\end{table}
+
+
+
 \newpage
 \begin{figure} [ht!]
   \centering
@@ -638,7 +666,7 @@ adult males (0.852$\pm$0.048).
     December. The lines (and dotted lines) represent the separate GAMM
     models for each variable (with the confidence intervals) including
     a smoothed effect of time (Julian date) based on cyclic P-spline,
-    which differed among study sites, sexes and age-classes. Based on
+    which differed among study sites, sexes and age classes. Based on
     the literature, the light gray represents the assumed territorial
     period, from the 1st of April to the 1st of September, and the
     dark gray represents the birth period for females, from the 1st of
@@ -653,13 +681,13 @@ adult males (0.852$\pm$0.048).
   \centering
   \includegraphics[width=0.9\linewidth]{./figures/Fig3b.pdf}
   \caption{Temporal variations in mean head movements on the Y axis
-    for male and female roe deer among age-classes in the two study
+    for male and female roe deer among age classes in the two study
     sites (AUR in France and BAV in Germany), from 2002 to 2013 in AUR
     and from 2004 and 2015 in BAV. The time series starts on the 22nd
     of December. The lines (and dotted lines) represent the GAMM
     models (with the confidence intervals) including a smoothed effect
     of time (Julian date) based on a cyclic P-spline, which differed
-    among study sites, sexes and age-classes. Based on the literature,
+    among study sites, sexes and age classes. Based on the literature,
     the light gray represents the assumed territorial period, from the
     1st of April to the 1st of September, and the dark gray represents
     the birth period for females, from the 1st of May to the 1st of
