@@ -226,7 +226,7 @@ km$^2$) and the Šumava National Park (640 km$^2$) respectively
 forest,... \todo{to be completed by Marco} Elevation varies
 substantially between 600 and 1450 m a.s.l. and the site consists
 essentially of forests of Norway spruce \species{picea abies L.}. The
-climate is continental, with an average annual temperature ranginf
+climate is continental, with an average annual temperature ranging
 between 3°C and 6.5°C depending on the elevation, and an average
 annual precipitation of between 830 and 2230 mm. The roe deer is
 hunted...\todo{to be completed by Marco}
@@ -266,8 +266,9 @@ with a fix interval of approximately 6 hours). We considered six
 months of monitoring as the minimum to obtain a representative
 estimate of ranging behaviour over the spring-summer period and we
 kept only those individuals with at least 75\% (or 90\%) of the
-scheduled locations. The final sample comprised 72 and 190 individual age classes at BAV and AUR, repectively (or 43 and 95) (average of 3.6 and 3.8
-locations per day for 75\% and 90\% of scheduled locations
+scheduled locations. The final sample comprised 72 and 190 individual
+age classes at BAV and AUR, repectively (or 43 and 95) (average of 3.6
+and 3.8 locations per day for 75\% and 90\% of scheduled locations
 respectively).
 
 In order to identify temporal changes in behaviour, we generated four
@@ -304,9 +305,11 @@ we aggregated the activity information across a six hour window
 centred on each theoretical GPS location (\textit{i.e.} at 00:00,
 06:00, 12:00 and 18:00). For example, for a location obtained at
 06:00, we averaged activity data measured from 03:00 to 09:00
-separately for both the X and Y axes. Due to missing activity data for some individuals, the sample for head movements on the X axis and on the Y axis
- comprised 52 and 168 individual age classes at BAV
-and AUR respectively for 75\% of scheduled locations (or 35 and 85 for 90\% of scheduled locations).
+separately for both the X and Y axes. Due to missing activity data for
+some individuals, the sample for head movements on the X axis and on
+the Y axis comprised 52 and 168 individual age classes at BAV and AUR
+respectively for 75\% of scheduled locations (or 35 and 85 for 90\% of
+scheduled locations).
 
 \section*{Statistical analyses}
 
@@ -440,10 +443,14 @@ class (yearlings, sub-adults and adults). As we expected to observe
 the territorial behaviour mostly on adult roe deer and in order to
 make sure we obtained the same results over the two sites, we included
 also the three-way interactions between these sex, site and age class
-(and all two-way interactions) in the most complex model. To perform this unsupervised clustering method, we retained the 52 and 168 individuals age classes for BAV and AUR, respectively, with at least 75\% of the scheduled locations and the three temporal metrics (speed, meanX and meanY). We performed our model selection with the second order Akaike’s
-information criterion corrected for small sample size. We used the
-\textit{dredge} function in the \textit{MuMIn} library to generate all
-sets of models \citep{barton_mumin:_2016}.
+(and all two-way interactions) in the most complex model. To perform
+this unsupervised clustering method, we retained the 52 and 168
+individuals age classes for BAV and AUR, respectively, with at least
+75\% of the scheduled locations and the three temporal metrics (speed,
+meanX and meanY). We performed our model selection with the second
+order Akaike’s information criterion corrected for small sample
+size. We used the \textit{dredge} function in the \textit{MuMIn}
+library to generate all sets of models \citep{barton_mumin:_2016}.
 
 \section*{Results}
 \subsection*{At the population level}
@@ -463,18 +470,25 @@ temporal variation of the different metrics followed a comparable
 pattern (Fig.~\ref{fig:sex}). However, the temporal variation of the
 four metrics differed markedly between adult males and females
 (Fig.~\ref{fig:age}). Residence time of females showed a pronounced
-peak around the birth period, whereas it was more or less
-constant for males. The temporal fluctuations were generally consistent
-among the different age-classes (Fig.~\ref{fig:age}).
+peak around the birth period, whereas it was more or less constant for
+males. The temporal fluctuations were generally consistent among the
+different age-classes (Fig.~\ref{fig:age}).
 
 For females, movement speed followed an inverted bell curve, and was
 highest during winter and lowest near the summer solstice. However,
 the temporal variations in actvity (head movements on the X and Y
 axes) were not very consistent between the two study sites. In
 contrast, for males, both movement speed and head movements (X and Y
-axes) followed a bimodal distribution, with one peak in spring (between the 3rd and
-12th of April for AUR and the 16th of May for BAV, Table \ref{tab:peaks}) and
-another peak in summer (between the 29th of July and 13th of August for AUR between the 16th and 30th of July for BAV, Table \ref{tab:peaks}). Finally, there was a better consistency between head movements on the X and Y axes and between study sites (with one peak in spring between the 11th and 12th of April for AUR and the 16th of May for BAV, and another peak in summer the 29th of July for AUR and between the 29th and 30th of July for BAV, Table \ref{tab:peaks})\krisin{OK Merci Nico. Je commence un draft de discussion ce vendredi !}
+axes) followed a bimodal distribution, with one peak in spring
+(between the 3rd and 12th of April for AUR and the 16th of May for
+BAV, Table \ref{tab:peaks}) and another peak in summer (between the
+29th of July and 13th of August for AUR between the 16th and 30th of
+July for BAV, Table \ref{tab:peaks}). Finally, there was a better
+consistency between head movements on the X and Y axes and between
+study sites (with one peak in spring between the 11th and 12th of
+April for AUR and the 16th of May for BAV, and another peak in summer
+the 29th of July for AUR and between the 29th and 30th of July for
+BAV, Table \ref{tab:peaks}).
 
 \subsection*{At the individual level}
 From the hierarchical clustering performed separately for each study
@@ -497,6 +511,32 @@ peaks was much lower for adult females (0.016$\pm$0.016) than for
 adult males (0.852$\pm$0.048).
 
 \section*{Discussion}
+
+Males and females of the same species often display contrasting mating
+related behaviours (Lott 1984, Clutton-Brock et al. 1982). Even if the
+roe deer is oligomorphic and present a small sexual size dimorphism
+only (ref), adult males show an unusually long period of
+mating-related behaviour for a large herbivore. Male roe deer start
+with territoriality in early March to the end of rut by late August
+(ref). By this time, females give birth around June, raise there fawns
+for the next 6 months, while mating takes place in August. The marked
+between-sex differences in the timing of the different events of
+reproduction is clearly visible in the movement and activity variables
+we explored (see Fig.~\ref{fig:sex}). From the seasonal patterns of
+speed and levels of activity, the timing of parturition is evidenced
+by a decrease in activity and a restricted range of female roe deer as
+previously reported for reindeer (ref) or white-tailed deer
+(ref). Moreover two peaks of activity and speed, associated to a
+reduced range, characterize male seasonal patterns, matching with the
+expected timing of territoriality and mating of roe deer (ref). Given
+the high age- and sex-specificity of this double peak
+(Table~\ref{tab:peaks}), we suggest that territoriality and rut of
+male roe deer can be assessed indirectly from activity and movement at
+the population and individual levels.
+
+Reproduction has strong effect on animals, driving movement and
+activity patterns.
+
 
 \bibliography{nico,/home/christophe/Documents/bibtex/Kris_2006}
 
