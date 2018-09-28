@@ -426,7 +426,7 @@ of similar metrics.\krisin{Je me demande ici si ce n'est pas embêtant
   regarder vite fait? A tout le moins, comment justifier ces choix
   autrement que par le fait que les GAMM ne proposent pas de wavelet
   et dans ce cas, pourquoi ne pas avoir utilisé les GAMM ici pour la
-  méthode de classification.}\nico{Comme tu l'expliques bien dans le
+  méthode de classification.}\nicoin{Comme tu l'expliques bien dans le
   chapeau, il y a l'approche au niveau populationnel et celle au
   niveau individuel. L'approche au niveau pop est descriptive, au
   niveau individuel on a besoin de quelque chose de plus efficace -
@@ -540,6 +540,10 @@ activity patterns.
 
 \bibliography{nico,/home/christophe/Documents/bibtex/Kris_2006}
 
+%%
+%% Start table section here
+%%
+
 \newpage
 \begin{table}[htbp]
   \centering
@@ -567,30 +571,31 @@ activity patterns.
       RT250 & S(time) & 266.6 & -703224.5 & 31710.8 & <0.001 \\
             & S(time by sex) & 285   & -720677.4 & 14257.9 & <0.001 \\
             & S(time by sex, age) & 355.9 & -724606.7 & 10328.6 & <0.001 \\
-            & S(time by sex, study & 321.5 & -728284.1 & 6651.2 & <0.001 \\
-            & \textbf{S(time by sex, age, study} & \textbf{461.4} & \textbf{-734935.3} & \textbf{0} & \textbf{1} \\        
+            & S(time by sex, study) & 321.5 & -728284.1 & 6651.2 & <0.001 \\
+            & \textbf{S(time by sex, age, study)} & \textbf{461.4} & \textbf{-734935.3} & \textbf{0} & \textbf{1} \\        
       \hline
       Speed & S(time) & 262.4 & 335783.2 & 8361.3 & <0.001 \\
             & S(time by sex) & 278.2 & 331056.5 & 3634.6 & <0.001 \\
             & S(time by sex, age) & 339.7 & 329990.8 & 2568.9 & <0.001 \\
-            & S(time by sex, study & 314.6 & 328918.7 & 1496.9 & <0.001 \\
-            & \textbf{S(time by sex, age, study} & \textbf{432.7} & \textbf{327421.8} & \textbf{0} & \textbf{1} \\
+            & S(time by sex, study) & 314.6 & 328918.7 & 1496.9 & <0.001 \\
+            & \textbf{S(time by sex, age, study)} & \textbf{432.7} & \textbf{327421.8} & \textbf{0} & \textbf{1} \\
       \hline
-      MeanX & S(time) & 237.8 & 1001934.3 & 24639.5 & <0.001 \\
-            & S(time by sex) & 256.5 & 996264.1 & 18969.3 & <0.001 \\
-            & S(time by sex, age) & 329.3 & 993102.3 & 15807.5 & <0.001 \\
-            & S(time by sex, study & 293.7 & 981784.4 & 4489.6 & <0.001 \\
-            & \textbf{S(time by sex, age, study} & \textbf{438.2} & \textbf{977294.8} & \textbf{0} & \textbf{1} \\       
+     MeanX & S(time) & 232.8 & 969195.1 & 26151.3 & <0.001 \\
+          & S(time by sex) & 251.5 & 962980.3 & 19936.5 & <0.001 \\
+          & S(time by sex, age) & 324.6 & 959415 & 16371.2 & <0.001 \\
+          & S(time by sex, study) & 288.8 & 948340.7 & 5296.9 & <0.001 \\
+          & \textbf{S(time by sex, age, study)} & \textbf{434.4} & \textbf{943043.8} & \textbf{0}     & \textbf{1} \\ 
       \hline
-      MeanY & S(time) & 237.6 & 1125826.3 & 19234.9 & <0.001 \\
-            & S(time by sex) & 256.3 & 1121643.1 & 15051.7 & <0.001 \\
-            & S(time by sex, age) & 327.4 & 1119574.2 & 12982.8 & <0.001 \\
-            & S(time by sex, study & 293.7 & 1109759.4 & 3168  & <0.001 \\
-            & \textbf{S(time by sex, age, study} & \textbf{433.5} & \textbf{1106591.4} & \textbf{0} & \textbf{1} \\
+      MeanY & S(time) & 236.6 & 1125248.5 & 19227.6 & <0.001 \\
+          & S(time by sex) & 255.3 & 1121066.5 & 15045.6 & <0.001 \\
+          & S(time by sex, age) & 326.4 & 1118998.5 & 12977.7 & <0.001 \\
+          & S(time by sex, study) & 292.7 & 1109187.7 & 3166.9 & <0.001 \\
+          & \textbf{S(time by sex, age, study)} & \textbf{432.5} & \textbf{1106020.8} & \textbf{0}     & \textbf{1} \\
       \hline 
     \end{tabular}
   \end{table}
- 
+  
+\newpage
 \begin{table}[t]
   \centering
   \caption{Summaries of the candidate generalized linear models to
@@ -624,9 +629,10 @@ activity patterns.
     \end{tabular}
 \end{table}
 
+\newpage
 \begin{table}[t]
   \centering
-  \caption{Julian date of the maximum (and confidence intervals obtained from boostrapping from the posterior distribution of the peak location) observed during the first and the second half-year of the generalized additive
+  \caption{Date of the maximum (and confidence intervals obtained from bootstrapping from the posterior distribution of the peak location) observed during the first and the second half-year of the generalized additive
     mixed models for residence time in a radius of 250 m (RT250),
     movement speed (speed), mean head movements on the X axis (meanX)
     and the Y axis (meanY), including a smoothed effect of time
@@ -651,7 +657,9 @@ activity patterns.
     \end{tabular}
 \end{table}
 
-
+%%
+%% Start figure section here
+%%
 
 \newpage
 \begin{figure} [ht!]
